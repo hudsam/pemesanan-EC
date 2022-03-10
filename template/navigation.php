@@ -5,14 +5,12 @@
                 <img src="https://ecoclean.hudsam.xyz/wp-content/uploads/2021/08/Logo.png" alt="logo" title="logo Eco-Clean" role="img" width="85px" />
             </a>
             <ul class="nav col-12 col-lg-auto me-lg-auto mx-5 mb-2 justify-content-center mb-md-0">
-                <li><a href="" class="pe-none nav-link mx-2 px-2 text-secondary"><i class="bi bi-info-circle"></i> Tentang Kami</a></li>
-                <li><a href="" class="pe-none nav-link mx-2 px-2 text-secondary"><i class="bi bi-person-hearts"></i> Layanan</a></li>
-                <li><a href="" class="pe-none nav-link mx-2 px-2 text-secondary"><i class="bi bi-boxes"></i> Produk</a></li>
-                <li><a href="" class="pe-none nav-link mx-2 px-2 text-secondary"><i class="bi bi-telephone"></i> Kontak</a></li>
+                <li><a href="/" class="nav-link mx-2 px-2 text-secondary"><i class="bi bi-house-fill"></i> Beranda</a></li>
+                <li><a href="proses.php" class="nav-link mx-2 px-2 text-secondary"><i class="bi bi-bag-heart-fill"></i> Pesan Layanan</a></li>
+                <li><a href="tracking.php" class="nav-link mx-2 px-2 text-secondary"><i class="bi bi-boxes"></i> Tracking</a></li>
             </ul>
             <div class="text-end">
-                <a href="" class="pe-none btn btn-outline-info text-info me-2 fw-bold"><i class="bi bi-person-square"></i> Daftar</a>
-                <a href="" class="pe-none btn btn-info text-white"><i class="bi bi-box-arrow-in-right"></i> Masuk</a>
+                <a href="#" class="btn btn-outline-info me-2 fw-bold" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Menu tidak aktif" style="cursor: not-allowed;"><i class="bi bi-person-square"></i> Akun</a>
             </div>
         </div>
     </div>

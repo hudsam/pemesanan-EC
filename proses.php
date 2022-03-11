@@ -152,7 +152,7 @@
                             </div>
                         </div>
                         <div class="card-footer bg-light">
-                            <div class="f1-buttons">
+                            <div class="d-flex justify-content-end">
                                 <button type="button" class="btn btn-outline-secondary btn-md col-md-3 btn-next">Selanjutnya <i class="bi bi-arrow-right"></i></button>
                             </div>
                         </div>
@@ -227,7 +227,7 @@
                             </div>
                         </div>
                         <div class="card-footer bg-light">
-                            <div class="f1-buttons">
+                            <div class="d-flex justify-content-between">
                                 <button type="button" class="btn btn-outline-warning btn-md col-md-3 btn-previous"><i class="bi bi-arrow-left"></i> Sebelumnya</button>
                                 <button type="button" class="btn btn-outline-secondary btn-md col-md-3 btn-next">Selanjutnya <i class="bi bi-arrow-right"></i></button>
                             </div>
@@ -309,7 +309,7 @@
                             </div>
                         </div>
                         <div class="card-footer bg-light">
-                            <div class="f1-buttons">
+                            <div class="d-flex justify-content-between">
                                 <button type="button" class="btn btn-outline-warning btn-md col-md-3 btn-previous"><i class="bi bi-arrow-left"></i> Sebelumnya</button>
                                 <button type="button" class="btn btn-outline-secondary btn-md col-md-3 btn-next">Selanjutnya <i class="bi bi-arrow-right"></i></button>
                             </div>
@@ -365,7 +365,7 @@
                             </div>
                         </div>
                         <div class="card-footer bg-light">
-                            <div class="f1-buttons">
+                            <div class="d-flex justify-content-between">
                                 <button type="button" class="btn btn-outline-warning btn-md col-md-3 btn-previous"><i class="bi bi-arrow-left"></i> Sebelumnya</button>
                                 <button type="button" class="btn btn-outline-secondary btn-md col-md-3 btn-next">Selanjutnya <i class="bi bi-arrow-right"></i></button>
                             </div>

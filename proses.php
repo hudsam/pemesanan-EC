@@ -17,23 +17,23 @@
                     </div>
                     <div class="f1-step active">
                         <div class="f1-step-icon"><i class="bi bi-box2-heart"></i></div>
-                        <p>Layanan</p>
+                        <p class="d-none d-md-block d-lg-block">Layanan</p>
                     </div>
                     <div class="f1-step">
                         <div class="f1-step-icon"><i class="bi bi-calendar-week"></i></div>
-                        <p>Jadwal</p>
+                        <p class="d-none d-md-block d-lg-block">Jadwal</p>
                     </div>
                     <div class="f1-step">
                         <div class="f1-step-icon"><i class="bi bi-ui-checks"></i></div>
-                        <p>Detail</p>
+                        <p class="d-none d-md-block d-lg-block">Detail</p>
                     </div>
                     <div class="f1-step">
                         <div class="f1-step-icon"><i class="bi bi-wallet2"></i></div>
-                        <p>Pembayaran</p>
+                        <p class="d-none d-md-block d-lg-block">Pembayaran</p>
                     </div>
                     <div class="f1-step">
                         <div class="f1-step-icon"><i class="bi bi-bag-check"></i></div>
-                        <p>Selesai</p>
+                        <p class="d-none d-md-block d-lg-block">Selesai</p>
                     </div>
                 </div>
                 <hr class="dropdown-divider">
@@ -70,35 +70,35 @@
                                     <input type="radio" class="btn-check" name="jenis-layanan" id="paket-basic" autocomplete="off">
                                     <label class="btn btn-outline-primary me-3 col-sm-2" for="paket-basic">
                                         <h6>Basic Plan</h6>
-                                        <font class="card-title">25 Ribu<small>/kunjungan</small></font>
-                                        <hr class="d-sm-none d-md-block dropdown-divider">
-                                        <small class="d-sm-none d-md-block" style="text-align: left !important;"><i class="bi bi-check-circle-fill text-success ms-2 me-3"></i> Eco Enzyme</small>
-                                        <small class="d-sm-none d-md-block" style="text-align: left !important;"><i class="bi bi-check-circle-fill text-success ms-2 me-3"></i> Kamar Mandi</small>
-                                        <small class="d-sm-none d-md-block" style="text-align: left !important;"><i class="bi bi-x-circle-fill text-danger ms-2 me-3"></i> Dapur dan Kulkas</small>
-                                        <small class="d-sm-none d-md-block" style="text-align: left !important;"><i class="bi bi-x-circle-fill text-danger ms-2 me-3"></i> Ruang Tengah</small>
-                                        <small class="d-sm-none d-md-block" style="text-align: left !important;"><i class="bi bi-x-circle-fill text-danger ms-2 me-3"></i> 2 Kamar</small>
+                                        <small class="d-none d-md-block d-lg-block card-title">25 Ribu/kunjungan</small>
+                                        <hr class="d-none d-md-block d-lg-block dropdown-divider">
+                                        <small class="d-none d-md-block d-lg-block" style="text-align: left !important;"><i class="bi bi-check-circle-fill text-success ms-2 me-3"></i> Eco Enzyme</small>
+                                        <small class="d-none d-md-block d-lg-block" style="text-align: left !important;"><i class="bi bi-check-circle-fill text-success ms-2 me-3"></i> Kamar Mandi</small>
+                                        <small class="d-none d-md-block d-lg-block" style="text-align: left !important;"><i class="bi bi-x-circle-fill text-danger ms-2 me-3"></i> Dapur dan Kulkas</small>
+                                        <small class="d-none d-md-block d-lg-block" style="text-align: left !important;"><i class="bi bi-x-circle-fill text-danger ms-2 me-3"></i> Ruang Tengah</small>
+                                        <small class="d-none d-md-block d-lg-block" style="text-align: left !important;"><i class="bi bi-x-circle-fill text-danger ms-2 me-3"></i> 2 Kamar</small>
                                     </label>
                                     <input type="radio" class="btn-check" name="jenis-layanan" id="paket-super" autocomplete="off" checked>
                                     <label class="btn btn-outline-primary me-3 col-sm-2" for="paket-super">
                                         <h6>Super Plan</h6>
-                                        <font class="card-title">100 Ribu<small>/kunjungan</small></font>
-                                        <hr class="dropdown-divider d-sm-none d-md-block">
-                                        <small class="d-sm-none d-md-block" style="text-align: left !important;"><i class="bi bi-check-circle-fill text-success ms-2 me-3"></i> Eco Enzyme</small>
-                                        <small class="d-sm-none d-md-block" style="text-align: left !important;"><i class="bi bi-check-circle-fill text-success ms-2 me-3"></i> Kamar Mandi</small>
-                                        <small class="d-sm-none d-md-block" style="text-align: left !important;"><i class="bi bi-check-circle-fill text-success ms-2 me-3"></i> Dapur dan Kulkas</small>
-                                        <small class="d-sm-none d-md-block" style="text-align: left !important;"><i class="bi bi-check-circle-fill text-success ms-2 me-3"></i> Ruang Tengah</small>
-                                        <small class="d-sm-none d-md-block" style="text-align: left !important;"><i class="bi bi-check-circle-fill text-success ms-2 me-3"></i> 2 Kamar</small>
+                                        <small class="d-none d-md-block d-lg-block card-title">100 Ribu/kunjungan</small>
+                                        <hr class="d-none d-md-block d-lg-block dropdown-divider">
+                                        <small class="d-none d-md-block d-lg-block" style="text-align: left !important;"><i class="bi bi-check-circle-fill text-success ms-2 me-3"></i> Eco Enzyme</small>
+                                        <small class="d-none d-md-block d-lg-block" style="text-align: left !important;"><i class="bi bi-check-circle-fill text-success ms-2 me-3"></i> Kamar Mandi</small>
+                                        <small class="d-none d-md-block d-lg-block" style="text-align: left !important;"><i class="bi bi-check-circle-fill text-success ms-2 me-3"></i> Dapur dan Kulkas</small>
+                                        <small class="d-none d-md-block d-lg-block" style="text-align: left !important;"><i class="bi bi-check-circle-fill text-success ms-2 me-3"></i> Ruang Tengah</small>
+                                        <small class="d-none d-md-block d-lg-block" style="text-align: left !important;"><i class="bi bi-check-circle-fill text-success ms-2 me-3"></i> 2 Kamar</small>
                                     </label>
                                     <input type="radio" class="btn-check" name="jenis-layanan" id="paket-standard" autocomplete="off">
                                     <label class="btn btn-outline-primary me-3 col-sm-2" for="paket-standard">
                                         <h6>Standard Plan</h6>
-                                        <font class="card-title">55 Ribu<small>/kunjungan</small></font>
-                                        <hr class="dropdown-divider d-sm-none d-md-block">
-                                        <small class="d-sm-none d-md-block" style="text-align: left !important;"><i class="bi bi-check-circle-fill text-success ms-2 me-3"></i> Eco Enzyme</small>
-                                        <small class="d-sm-none d-md-block" style="text-align: left !important;"><i class="bi bi-check-circle-fill text-success ms-2 me-3"></i> Dapur dan Kulkas</small>
-                                        <small class="d-sm-none d-md-block" style="text-align: left !important;"><i class="bi bi-x-circle-fill text-danger ms-2 me-3"></i> Kamar Mandi</small>
-                                        <small class="d-sm-none d-md-block" style="text-align: left !important;"><i class="bi bi-x-circle-fill text-danger ms-2 me-3"></i> Ruang Tengah</small>
-                                        <small class="d-sm-none d-md-block" style="text-align: left !important;"><i class="bi bi-x-circle-fill text-danger ms-2 me-3"></i> 2 Kamar</small>
+                                        <small class="d-none d-md-block d-lg-block card-title">55 Ribu/kunjungan</small>
+                                        <hr class="d-none d-md-block d-lg-block dropdown-divider">
+                                        <small class="d-none d-md-block d-lg-block" style="text-align: left !important;"><i class="bi bi-check-circle-fill text-success ms-2 me-3"></i> Eco Enzyme</small>
+                                        <small class="d-none d-md-block d-lg-block" style="text-align: left !important;"><i class="bi bi-check-circle-fill text-success ms-2 me-3"></i> Dapur dan Kulkas</small>
+                                        <small class="d-none d-md-block d-lg-block" style="text-align: left !important;"><i class="bi bi-x-circle-fill text-danger ms-2 me-3"></i> Kamar Mandi</small>
+                                        <small class="d-none d-md-block d-lg-block" style="text-align: left !important;"><i class="bi bi-x-circle-fill text-danger ms-2 me-3"></i> Ruang Tengah</small>
+                                        <small class="d-none d-md-block d-lg-block" style="text-align: left !important;"><i class="bi bi-x-circle-fill text-danger ms-2 me-3"></i> 2 Kamar</small>
                                     </label>
                                 </div>
                             </div>
@@ -153,7 +153,7 @@
                         </div>
                         <div class="card-footer bg-light">
                             <div class="f1-buttons">
-                                <button type="button" class="btn btn-outline-secondary btn-lg col-md-3 btn-next">Selanjutnya <i class="bi bi-arrow-right"></i></button>
+                                <button type="button" class="btn btn-outline-secondary btn-md col-md-3 btn-next">Selanjutnya <i class="bi bi-arrow-right"></i></button>
                             </div>
                         </div>
                     </div>
@@ -228,8 +228,8 @@
                         </div>
                         <div class="card-footer bg-light">
                             <div class="f1-buttons">
-                                <button type="button" class="btn btn-outline-warning btn-lg col-md-3 btn-previous"><i class="bi bi-arrow-left"></i> Sebelumnya</button>
-                                <button type="button" class="btn btn-outline-secondary btn-lg col-md-3 btn-next">Selanjutnya <i class="bi bi-arrow-right"></i></button>
+                                <button type="button" class="btn btn-outline-warning btn-md col-md-3 btn-previous"><i class="bi bi-arrow-left"></i> Sebelumnya</button>
+                                <button type="button" class="btn btn-outline-secondary btn-md col-md-3 btn-next">Selanjutnya <i class="bi bi-arrow-right"></i></button>
                             </div>
                         </div>
                     </div>
@@ -285,22 +285,22 @@
                                                 </tr>
                                                 <tr>
                                                     <th>Layanan atau Paket <span class="badge bg-info">Super Plan | <i class="bi bi-eye-fill text-dark" data-bs-toggle="tooltip" data-bs-html="true" title="<em>Tooltip</em>"></i></span></th>
-                                                    <td style="text-align: right;">Rp 100.000,00</td>
+                                                    <td style="text-align: right;">Rp 100.000</td>
                                                 </tr>
                                                 <tr>
                                                     <th>Tipe Ruangan <span class="badge bg-info">1 Kamar</span></th>
-                                                    <td style="text-align: right;">Rp 15.000,00</td>
+                                                    <td style="text-align: right;">Rp 15.000</td>
                                                 </tr>
                                                 <tr>
                                                     <th>Layanan Ekstra <span class="badge bg-info">Kulkas</span></th>
-                                                    <td style="text-align: right;">Rp 15.000,00</td>
+                                                    <td style="text-align: right;">Rp 15.000</td>
                                                 </tr>
                                                 <tr>
                                                     <th colspan="2" class="text-center table-active">Total yang Harus Dibayar</th>
                                                 </tr>
                                                 <tr>
-                                                    <th>Nominal</th>
-                                                    <th style="text-align: right;" class="text-success">Rp 130.000,00</th>
+                                                    <th style="width: 65%;">Nominal</th>
+                                                    <th style="text-align: right;" class="text-success">Rp 130.000</th>
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -310,8 +310,8 @@
                         </div>
                         <div class="card-footer bg-light">
                             <div class="f1-buttons">
-                                <button type="button" class="btn btn-outline-warning btn-lg col-md-3 btn-previous"><i class="bi bi-arrow-left"></i> Sebelumnya</button>
-                                <button type="button" class="btn btn-outline-secondary btn-lg col-md-3 btn-next">Selanjutnya <i class="bi bi-arrow-right"></i></button>
+                                <button type="button" class="btn btn-outline-warning btn-md col-md-3 btn-previous"><i class="bi bi-arrow-left"></i> Sebelumnya</button>
+                                <button type="button" class="btn btn-outline-secondary btn-md col-md-3 btn-next">Selanjutnya <i class="bi bi-arrow-right"></i></button>
                             </div>
                         </div>
                     </div>
@@ -324,7 +324,7 @@
                             <div class="row">
                                 <div class="col-sm-6">
                                     <div class="alert alert-info" role="alert">
-                                        Total yang harus dibayar nantinya (tagihan): <font class="fw-bold">Rp. 130.000,00</font>
+                                        Total yang harus dibayar nantinya (tagihan): <font class="fw-bold">Rp. 130.000</font>
                                     </div>
                                 </div>
                             </div>
@@ -366,8 +366,8 @@
                         </div>
                         <div class="card-footer bg-light">
                             <div class="f1-buttons">
-                                <button type="button" class="btn btn-outline-warning btn-lg col-md-3 btn-previous"><i class="bi bi-arrow-left"></i> Sebelumnya</button>
-                                <button type="button" class="btn btn-outline-secondary btn-lg col-md-3 btn-next">Selanjutnya <i class="bi bi-arrow-right"></i></button>
+                                <button type="button" class="btn btn-outline-warning btn-md col-md-3 btn-previous"><i class="bi bi-arrow-left"></i> Sebelumnya</button>
+                                <button type="button" class="btn btn-outline-secondary btn-md col-md-3 btn-next">Selanjutnya <i class="bi bi-arrow-right"></i></button>
                             </div>
                         </div>
                     </div>

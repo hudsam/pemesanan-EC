@@ -31,7 +31,7 @@
                                             <i class="bi bi-geo" style="font-size: 25px;"></i>
                                         </div>
                                         <div class="tracking-date">01 Maret 2022<span>09.00 WITA</span></div>
-                                        <div class="tracking-content">KEHADIRAN<span>Mitra Eco-Clean telah telah sesuai titik lokasi pelanggan</span></div>
+                                        <div class="tracking-content">KEHADIRAN<span>Posisi mitra Eco-Clean telah sesuai titik lokasi</span></div>
                                     </div>
                                     <div class="tracking-item">
                                         <div class="tracking-icon status-outfordelivery">
@@ -40,21 +40,21 @@
                                             </svg>
                                         </div>
                                         <div class="tracking-date">01 Maret 2022<span>08.30 WITA</span></div>
-                                        <div class="tracking-content">PERJALANAN<span>Mitra Eco-Clean sedang menuju ke lokasi pelanggan</span></div>
+                                        <div class="tracking-content">PERJALANAN<span>Mitra Eco-Clean sedang menuju ke lokasi yang pelanggan tentukan</span></div>
                                     </div>
                                     <div class="tracking-item">
                                         <div class="tracking-icon status-delivered">
                                             <i class="bi bi-person-check" style="font-size: 25px;"></i>
                                         </div>
                                         <div class="tracking-date">01 Maret 2022<span>08.15 WITA</span></div>
-                                        <div class="tracking-content">KONFIRMASI<span>Mitra Eco-Clean bersedia memberikan pelayanan sesuai kebutuhan pelanggan</span></div>
+                                        <div class="tracking-content">KONFIRMASI<span>Terdapat mitra Eco-Clean yang merima pesanan pelanggan</span></div>
                                     </div>
                                     <div class="tracking-item">
                                         <div class="tracking-icon status-sponsored">
                                             <i class="bi bi-bag-check" style="font-size: 25px;"></i>
                                         </div>
                                         <div class="tracking-date">01 Maret 2022<span>08.00 WITA</span></div>
-                                        <div class="tracking-content">PEMESANAN<span>Pelanggan menyelesaikan pesanan pada laman</span></div>
+                                        <div class="tracking-content">PEMESANAN<span>Pelanggan telah menyelesaikan pesanan pada laman</span></div>
                                     </div>
                                     <div class="tracking-item d-none">
                                         <div class="tracking-icon status-exception">
@@ -88,7 +88,7 @@
                                     </font>
                                     Sedang dalam tahap pengerjaan
                                 </h6>
-                                <small class="text-muted">Setelah kamu dapat menikmati kenyamanan layanan kami, maka tahap terakhir yakni menyelesaikan transaksi tagihan pembayaran sesuai metode yang telah ditentukan sebelumnya.</small>
+                                <small class="text-muted">Setelah kamu mendapat kenyamanan layanan kami, maka tahap terakhir yakni menyelesaikan transaksi tagihan pembayaran sesuai metode yang telah ditentukan sebelumnya.</small>
                                 <hr>
                                 <button type="button" class="btn btn-outline-primary btn-md" onclick="setelahTransaksi();"><i class="bi bi-wallet"></i> Tagihan Pembayaran</button>
                             </div>

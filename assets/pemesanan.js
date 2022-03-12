@@ -2,19 +2,6 @@ $(document).ready(function(){
     $('#tanggal').val('2022-01-03'); // Tahun-Tanggal-Bulan
     $('#jam').val('08:00:00');
 
-    const Toast = Swal.mixin({
-        toast: true,
-        position: 'bottom-start',
-        showConfirmButton: false,
-        timer: 5000,
-        width: '30rem',
-        timerProgressBar: true,
-        didOpen: (toast) => {
-            toast.addEventListener('mouseenter', Swal.stopTimer);
-            toast.addEventListener('mouseleave', Swal.resumeTimer);
-        }
-    });
-
     // Menentukan layanan atau paket
     $('label[for="area-rumah"]').on('click', function() {
         var layanan = $(this).data('layanan');

@@ -20,11 +20,17 @@ function setelahTransaksi() {
         /* Read more about handling dismissals below */
         if (result.dismiss === Swal.DismissReason.timer) {
             console.log('Pop-up penilaian muncul #' + Math.random())
-            // $('#modalPenilaian').modal({ show: true});
             $('#modalPenilaian').modal('show');
         }
     })
 }
+
+$('#kirim-penilaian').on('click', function() {
+    Toast.fire({
+        icon: 'success',
+        title: 'Terima kasih umpan balik yang kamu berikan.',
+    });
+});
 
 $(function() {
     $(document).on({

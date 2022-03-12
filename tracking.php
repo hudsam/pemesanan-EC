@@ -106,7 +106,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="staticBackdropLabel">Bagaimana layanan kami?</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <button type="button" class="d-none btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 <div class="wrap">
@@ -142,7 +142,9 @@
                     <textarea class="form-control" placeholder="Komentar" id="komentar" style="height: 100px; resize: none;"></textarea>
                     <label class="text-muted" for="komentar">Tinggalkan komentar di sini</label>
                 </div>
-                <button type="button" class="btn btn-primary mt-2"><i class="bi bi-chat-dots"></i> Beri Penilaian</button>
+                <button type="button" class="btn btn-primary mt-2" data-bs-dismiss="modal" aria-label="Close" id="kirim-penilaian">
+                    <i class="bi bi-chat-dots"></i> Beri Penilaian
+                </button>
             </div>
             <div class="modal-footer">
                 <button type="button" class="d-none btn btn-secondary" data-bs-dismiss="modal">Tutup</button>

@@ -6,6 +6,19 @@
         var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
             return new bootstrap.Tooltip(tooltipTriggerEl);
         });
+
+        const Toast = Swal.mixin({
+            toast: true,
+            position: 'bottom-start',
+            showConfirmButton: false,
+            timer: 5000,
+            width: '30rem',
+            timerProgressBar: true,
+            didOpen: (toast) => {
+                toast.addEventListener('mouseenter', Swal.stopTimer);
+                toast.addEventListener('mouseleave', Swal.resumeTimer);
+            }
+        });
     </script>
 </body>
 </html>

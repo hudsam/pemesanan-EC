@@ -130,6 +130,7 @@ $(document).ready(function(){
         )
         {
             $('#nextLayanan').addClass('btn-next');
+            totalBiayaPesanan();
         }
         else
         {
@@ -139,6 +140,15 @@ $(document).ready(function(){
             });
         }
     });
+
+    function totalBiayaPesanan() {
+        var layanan = $('#harga-layanan').text().replace('Rp ', '');
+        var ruangan = $('#harga-ruangan').text().replace('Rp ', '');
+        var ekstra = $('#harga-ekstra').text().replace('Rp ', '');
+
+        var total = parseInt(layanan) + parseInt(ruangan) + parseInt(ekstra);
+        $('.total-tagihan').text('Rp ' + total + '.000');
+    }
 
     function scroll_to_class(element_class, removed_height) {
         var scroll_to = $(element_class).offset().top - removed_height;

@@ -300,7 +300,7 @@
                                                 </tr>
                                                 <tr>
                                                     <th style="width: 65%;">Nominal</th>
-                                                    <th style="text-align: right;" class="text-success">Rp 130.000</th>
+                                                    <th style="text-align: right;" class="text-success total-tagihan"></th>
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -324,7 +324,7 @@
                             <div class="row">
                                 <div class="col-sm-6">
                                     <div class="alert alert-info" role="alert">
-                                        Total yang harus dibayar nantinya (tagihan): <font class="fw-bold">Rp. 130.000</font>
+                                        Total yang harus dibayar nantinya (tagihan): <font class="fw-bold total-tagihan"></font>
                                     </div>
                                 </div>
                             </div>

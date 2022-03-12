@@ -47,17 +47,17 @@
                             <div class="row mt-3 mb-2">
                                 <div class="btn-group col-md-9" role="group" aria-label="Basic radio toggle button group">
                                     <input type="radio" class="btn-check" name="jenis-layanan" id="area-rumah" autocomplete="off">
-                                    <label class="btn btn-outline-primary me-3" for="area-rumah" data-layanan="Rumah" data-harga="?">
+                                    <label class="btn btn-outline-primary me-3" for="area-rumah" data-layanan="Rumah" data-harga="Rp 0">
                                         <h4><i class="bi bi-house-door"></i></h4>
                                         <h6 class="card-title">Rumah</h6>
                                     </label>
                                     <input type="radio" class="btn-check" name="jenis-layanan" id="area-koskontrak" autocomplete="off">
-                                    <label class="btn btn-outline-primary me-3" for="area-koskontrak" data-layanan="Kos/Kontrak" data-harga="?">
+                                    <label class="btn btn-outline-primary me-3" for="area-koskontrak" data-layanan="Kos/Kontrak" data-harga="Rp 0">
                                         <h4><i class="bi bi-house"></i></h4>
                                         <h6 class="card-title">Kos/Kontak</h6>
                                     </label>
                                     <input type="radio" class="btn-check" name="jenis-layanan" id="area-apartemen" autocomplete="off">
-                                    <label class="btn btn-outline-primary me-3" for="area-apartemen" data-layanan="Apartemen" data-harga="?">
+                                    <label class="btn btn-outline-primary me-3" for="area-apartemen" data-layanan="Apartemen" data-harga="Rp 0">
                                         <h4><i class="bi bi-building"></i></h4>
                                         <h6 class="card-title">Apartemen</h6>
                                     </label>

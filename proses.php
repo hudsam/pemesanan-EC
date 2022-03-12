@@ -47,17 +47,17 @@
                             <div class="row mt-3 mb-2">
                                 <div class="btn-group col-md-9" role="group" aria-label="Basic radio toggle button group">
                                     <input type="radio" class="btn-check" name="jenis-layanan" id="area-rumah" autocomplete="off">
-                                    <label class="btn btn-outline-primary me-3" for="area-rumah">
+                                    <label class="btn btn-outline-primary me-3" for="area-rumah" data-layanan="Rumah" data-harga="?">
                                         <h4><i class="bi bi-house-door"></i></h4>
                                         <h6 class="card-title">Rumah</h6>
                                     </label>
                                     <input type="radio" class="btn-check" name="jenis-layanan" id="area-koskontrak" autocomplete="off">
-                                    <label class="btn btn-outline-primary me-3" for="area-koskontrak">
+                                    <label class="btn btn-outline-primary me-3" for="area-koskontrak" data-layanan="Kos/Kontrak" data-harga="?">
                                         <h4><i class="bi bi-house"></i></h4>
                                         <h6 class="card-title">Kos/Kontak</h6>
                                     </label>
                                     <input type="radio" class="btn-check" name="jenis-layanan" id="area-apartemen" autocomplete="off">
-                                    <label class="btn btn-outline-primary me-3" for="area-apartemen">
+                                    <label class="btn btn-outline-primary me-3" for="area-apartemen" data-layanan="Apartemen" data-harga="?">
                                         <h4><i class="bi bi-building"></i></h4>
                                         <h6 class="card-title">Apartemen</h6>
                                     </label>
@@ -68,7 +68,7 @@
                             <div class="row mt-3 mb-4">
                                 <div class="btn-group col-md-9" role="group" aria-label="Basic radio toggle button group">
                                     <input type="radio" class="btn-check" name="jenis-layanan" id="paket-basic" autocomplete="off">
-                                    <label class="btn btn-outline-primary me-3 col-sm-2" for="paket-basic">
+                                    <label class="btn btn-outline-primary me-3 col-sm-2" for="paket-basic" data-paket="Paket Basic" data-harga="Rp 25.000">
                                         <h6>Basic Plan</h6>
                                         <small class="d-none d-md-block d-lg-block card-title">25 Ribu/kunjungan</small>
                                         <hr class="d-none d-md-block d-lg-block dropdown-divider">
@@ -78,8 +78,8 @@
                                         <small class="d-none d-md-block d-lg-block" style="text-align: left !important;"><i class="bi bi-x-circle-fill text-danger ms-2 me-3"></i> Ruang Tengah</small>
                                         <small class="d-none d-md-block d-lg-block" style="text-align: left !important;"><i class="bi bi-x-circle-fill text-danger ms-2 me-3"></i> 2 Kamar</small>
                                     </label>
-                                    <input type="radio" class="btn-check" name="jenis-layanan" id="paket-super" autocomplete="off" checked>
-                                    <label class="btn btn-outline-primary me-3 col-sm-2" for="paket-super">
+                                    <input type="radio" class="btn-check" name="jenis-layanan" id="paket-super" autocomplete="off">
+                                    <label class="btn btn-outline-primary me-3 col-sm-2" for="paket-super" data-paket="Paket Super" data-harga="Rp 100.000">
                                         <h6>Super Plan</h6>
                                         <small class="d-none d-md-block d-lg-block card-title">100 Ribu/kunjungan</small>
                                         <hr class="d-none d-md-block d-lg-block dropdown-divider">
@@ -90,7 +90,7 @@
                                         <small class="d-none d-md-block d-lg-block" style="text-align: left !important;"><i class="bi bi-check-circle-fill text-success ms-2 me-3"></i> 2 Kamar</small>
                                     </label>
                                     <input type="radio" class="btn-check" name="jenis-layanan" id="paket-standard" autocomplete="off">
-                                    <label class="btn btn-outline-primary me-3 col-sm-2" for="paket-standard">
+                                    <label class="btn btn-outline-primary me-3 col-sm-2" for="paket-standard" data-paket="Paket Standard" data-harga="Rp 55.000">
                                         <h6>Standard Plan</h6>
                                         <small class="d-none d-md-block d-lg-block card-title">55 Ribu/kunjungan</small>
                                         <hr class="d-none d-md-block d-lg-block dropdown-divider">
@@ -106,20 +106,20 @@
                             <small class="text-muted">Pilih jenis tempat yang akan dibersihkan</small>
                             <div class="row mt-3 mb-4">
                                 <div class="btn-group-vertical col-md-5" role="group" aria-label="Basic radio toggle button group">
-                                    <input type="radio" class="btn-check" name="jenis-ruangan" id="ruangan-kamar" autocomplete="off" checked>
-                                    <label class="btn btn-outline-primary mb-1" for="ruangan-kamar">
+                                    <input type="radio" class="btn-check" name="jenis-ruangan" id="ruangan-kamar" autocomplete="off">
+                                    <label class="btn btn-outline-primary mb-1" for="ruangan-kamar" data-ruangan="1 Kamar" data-harga="Rp 15.000">
                                         <h6 class="card-title">1 Kamar Rp 15.000</h6>
                                     </label>
                                     <input type="radio" class="btn-check" name="jenis-ruangan" id="ruangan-kamarmandi" autocomplete="off">
-                                    <label class="btn btn-outline-primary mb-1" for="ruangan-kamarmandi">
+                                    <label class="btn btn-outline-primary mb-1" for="ruangan-kamarmandi" data-ruangan="1 Kamar Mandi" data-harga="Rp 25.000">
                                         <h6 class="card-title">1 Kamar Mandi Rp 25.000</h6>
                                     </label>
                                     <input type="radio" class="btn-check" name="jenis-ruangan" id="ruangan-ruangtengah" autocomplete="off">
-                                    <label class="btn btn-outline-primary mb-1" for="ruangan-ruangtengah">
+                                    <label class="btn btn-outline-primary mb-1" for="ruangan-ruangtengah" data-ruangan="1 Ruang Tengah" data-harga="Rp 15.000">
                                         <h6 class="card-title">1 Ruang Tengah Rp 15.000</h6>
                                     </label>
                                     <input type="radio" class="btn-check" name="jenis-ruangan" id="ruangan-tidakada" autocomplete="off">
-                                    <label class="btn btn-outline-danger mb-1" for="ruangan-tidakada">
+                                    <label class="btn btn-outline-danger mb-1" for="ruangan-tidakada" data-ruangan="Tidak Ada" data-harga="Rp 0">
                                         <h6 class="card-title"><i class="bi bi-x-circle-fill"></i> Tidak Memilih</h6>
                                     </label>
                                 </div>
@@ -129,23 +129,23 @@
                             <div class="row mt-3 mb-2">
                                 <div class="btn-group-vertical col-md-5" role="group" aria-label="Basic radio toggle button group">
                                     <input type="radio" class="btn-check" name="layanan-ekstra" id="ekstra-dapur" autocomplete="off">
-                                    <label class="btn btn-outline-primary mb-1" for="ekstra-dapur">
+                                    <label class="btn btn-outline-primary mb-1" for="ekstra-dapur" data-ekstra="Dapur" data-harga="Rp 15.000">
                                         <h6 class="card-title">Dapur Rp 15.000</h6>
                                     </label>
-                                    <input type="radio" class="btn-check" name="layanan-ekstra" id="ekstra-kulkas" autocomplete="off" checked>
-                                    <label class="btn btn-outline-primary mb-1" for="ekstra-kulkas">
+                                    <input type="radio" class="btn-check" name="layanan-ekstra" id="ekstra-kulkas" autocomplete="off">
+                                    <label class="btn btn-outline-primary mb-1" for="ekstra-kulkas" data-ekstra="Kulkas" data-harga="Rp 15.000">
                                         <h6 class="card-title">Kulkas Rp 15.000</h6>
                                     </label>
                                     <input type="radio" class="btn-check" name="layanan-ekstra" id="ekstra-pidahkos" autocomplete="off">
-                                    <label class="btn btn-outline-primary mb-1" for="ekstra-pidahkos">
+                                    <label class="btn btn-outline-primary mb-1" for="ekstra-pidahkos" data-ekstra="1 Kamar" data-harga="Rp 15.000">
                                         <h6 class="card-title">Pindahan tipe kos 1 kamar Rp 15.000</h6>
                                     </label>
                                     <input type="radio" class="btn-check" name="layanan-ekstra" id="ekstra-ecoenzyme" autocomplete="off">
-                                    <label class="btn btn-outline-primary mb-1" for="ekstra-ecoenzyme">
+                                    <label class="btn btn-outline-primary mb-1" for="ekstra-ecoenzyme" data-ekstra="Eco Enzyme 250ml" data-harga="Rp 10.000">
                                         <h6 class="card-title">Eco Enzyme 250ml Rp 10.000</h6>
                                     </label>
                                     <input type="radio" class="btn-check" name="layanan-ekstra" id="ekstra-tidakada" autocomplete="off">
-                                    <label class="btn btn-outline-danger mb-1" for="ekstra-tidakada">
+                                    <label class="btn btn-outline-danger mb-1" for="ekstra-tidakada" data-ekstra="Tidak Ada" data-harga="Rp 0">
                                         <h6 class="card-title"><i class="bi bi-x-circle-fill"></i> Tidak Memilih</h6>
                                     </label>
                                 </div>
@@ -153,7 +153,7 @@
                         </div>
                         <div class="card-footer bg-light">
                             <div class="d-flex justify-content-end">
-                                <button type="button" class="btn btn-outline-secondary btn-md col-md-3 btn-next">Selanjutnya <i class="bi bi-arrow-right"></i></button>
+                                <button type="button" class="btn btn-outline-secondary btn-md col-md-3" id="nextLayanan">Selanjutnya <i class="bi bi-arrow-right"></i></button>
                             </div>
                         </div>
                     </div>
@@ -284,16 +284,16 @@
                                                     <th colspan="2" class="text-center table-active">Biaya Pesanan</th>
                                                 </tr>
                                                 <tr>
-                                                    <th>Layanan atau Paket <span class="badge bg-info">Super Plan | <i class="bi bi-eye-fill text-dark" data-bs-toggle="tooltip" data-bs-html="true" title="<em>Tooltip</em>"></i></span></th>
-                                                    <td style="text-align: right;">Rp 100.000</td>
+                                                    <th>Layanan atau Paket <span class="badge bg-info"><small id="pilih-layanan"></small> | <i class="bi bi-eye-fill text-dark" data-bs-toggle="tooltip" data-bs-html="true" title="<em>Tooltip</em>"></i></span></th>
+                                                    <td style="text-align: right;" id="harga-layanan"></td>
                                                 </tr>
                                                 <tr>
-                                                    <th>Tipe Ruangan <span class="badge bg-info">1 Kamar</span></th>
-                                                    <td style="text-align: right;">Rp 15.000</td>
+                                                    <th>Tipe Ruangan <span class="badge bg-info" id="pilih-ruangan"></span></th>
+                                                    <td style="text-align: right;" id="harga-ruangan"></td>
                                                 </tr>
                                                 <tr>
-                                                    <th>Layanan Ekstra <span class="badge bg-info">Kulkas</span></th>
-                                                    <td style="text-align: right;">Rp 15.000</td>
+                                                    <th>Layanan Ekstra <span class="badge bg-info" id="pilih-ekstra"></span></th>
+                                                    <td style="text-align: right;" id="harga-ekstra"></td>
                                                 </tr>
                                                 <tr>
                                                     <th colspan="2" class="text-center table-active">Total yang Harus Dibayar</th>

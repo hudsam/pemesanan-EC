@@ -2,6 +2,144 @@ $(document).ready(function(){
     $('#tanggal').val('2022-01-03'); // Tahun-Tanggal-Bulan
     $('#jam').val('08:00:00');
 
+    const Toast = Swal.mixin({
+        toast: true,
+        position: 'bottom-start',
+        showConfirmButton: false,
+        timer: 5000,
+        width: '30rem',
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer);
+            toast.addEventListener('mouseleave', Swal.resumeTimer);
+        }
+    });
+
+    // Menentukan layanan atau paket
+    $('label[for="area-rumah"]').on('click', function() {
+        var layanan = $(this).data('layanan');
+        var harga = $(this).data('harga');
+        $('#pilih-layanan').html(layanan);
+        $('#harga-layanan').html(harga);
+    });
+
+    $('label[for="area-koskontrak"]').on('click', function() {
+        var layanan = $(this).data('layanan');
+        var harga = $(this).data('harga');
+        $('#pilih-layanan').html(layanan);
+        $('#harga-layanan').html(harga);
+    });
+
+    $('label[for="area-apartemen"]').on('click', function() {
+        var layanan = $(this).data('layanan');
+        var harga = $(this).data('harga');
+        $('#pilih-layanan').html(layanan);
+        $('#harga-layanan').html(harga);
+    });
+
+    $('label[for="paket-basic"]').on('click', function() {
+        var paket = $(this).data('paket');
+        var harga = $(this).data('harga');
+        $('#pilih-layanan').html(paket);
+        $('#harga-layanan').html(harga);
+    });
+
+    $('label[for="paket-super"]').on('click', function() {
+        var paket = $(this).data('paket');
+        var harga = $(this).data('harga');
+        $('#pilih-layanan').html(paket);
+        $('#harga-layanan').html(harga);
+    });
+
+    $('label[for="paket-standard"]').on('click', function() {
+        var paket = $(this).data('paket');
+        var harga = $(this).data('harga');
+        $('#pilih-layanan').html(paket);
+        $('#harga-layanan').html(harga);
+    });
+
+    $('label[for="ruangan-kamar"]').on('click', function() {
+        var ruangan = $(this).data('ruangan');
+        var harga = $(this).data('harga');
+        $('#pilih-ruangan').html(ruangan);
+        $('#harga-ruangan').html(harga);
+    });
+
+    $('label[for="ruangan-kamarmandi"]').on('click', function() {
+        var ruangan = $(this).data('ruangan');
+        var harga = $(this).data('harga');
+        $('#pilih-ruangan').html(ruangan);
+        $('#harga-ruangan').html(harga);
+    });
+
+    $('label[for="ruangan-ruangtengah"]').on('click', function() {
+        var ruangan = $(this).data('ruangan');
+        var harga = $(this).data('harga');
+        $('#pilih-ruangan').html(ruangan);
+        $('#harga-ruangan').html(harga);
+    });
+
+    $('label[for="ruangan-tidakada"]').on('click', function() {
+        var ruangan = $(this).data('ruangan');
+        var harga = $(this).data('harga');
+        $('#pilih-ruangan').html(ruangan);
+        $('#harga-ruangan').html(harga);
+    });
+
+    $('label[for="ekstra-dapur"]').on('click', function() {
+        var ekstra = $(this).data('ekstra');
+        var harga = $(this).data('harga');
+        $('#pilih-ekstra').html(ekstra);
+        $('#harga-ekstra').html(harga);
+    });
+
+    $('label[for="ekstra-kulkas"]').on('click', function() {
+        var ekstra = $(this).data('ekstra');
+        var harga = $(this).data('harga');
+        $('#pilih-ekstra').html(ekstra);
+        $('#harga-ekstra').html(harga);
+    });
+
+    $('label[for="ekstra-pindahkos"]').on('click', function() {
+        var ekstra = $(this).data('ekstra');
+        var harga = $(this).data('harga');
+        $('#pilih-ekstra').html(ekstra);
+        $('#harga-ekstra').html(harga);
+    });
+
+    $('label[for="ekstra-ecoenzyme"]').on('click', function() {
+        var ekstra = $(this).data('ekstra');
+        var harga = $(this).data('harga');
+        $('#pilih-ekstra').html(ekstra);
+        $('#harga-ekstra').html(harga);
+    });
+
+    $('label[for="ekstra-tidakada"]').on('click', function() {
+        var ekstra = $(this).data('ekstra');
+        var harga = $(this).data('harga');
+        $('#pilih-ekstra').html(ekstra);
+        $('#harga-ekstra').html(harga);
+    });
+
+    // Aksi 'button next' pada tahap: Layanan
+    $('#nextLayanan').on('click', function() {
+        if (
+            ($('#pilih-layanan').text() !== '' & $('#harga-layanan').text() !== '')
+            & ($('#pilih-ruangan').text() !== '' & $('#harga-ruangan').text() !== '')
+            & ($('#pilih-ekstra').text() !== '' & $('#harga-ekstra').text() !== '')
+        )
+        {
+            $('#nextLayanan').addClass('btn-next');
+        }
+        else
+        {
+            Toast.fire({
+                icon: 'warning',
+                title: 'Kamu belum menentukan layanan.',
+            });
+        }
+    });
+
     function scroll_to_class(element_class, removed_height) {
         var scroll_to = $(element_class).offset().top - removed_height;
         if($(window).scrollTop() != scroll_to) {
@@ -31,7 +169,9 @@ $(document).ready(function(){
         });
 
         // step selanjutnya (ketika klik tombol selanjutnya)
-        $('.f1 .btn-next').on('click', function() {
+
+        $(document).on('click', '.f1 .btn-next', function() {
+        // $('.f1 .btn-next').on('click', function() {
             var parent_fieldset = $(this).parents('fieldset');
             var next_step = true;
             // navigation steps / progress steps

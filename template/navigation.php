@@ -10,7 +10,7 @@
                 <li><a href="tracking.php" class="nav-link mx-2 px-2 text-secondary"><i class="bi bi-boxes"></i> Tracking</a></li>
             </ul>
             <div class="text-end">
-                <a href="#" class="btn btn-outline-info me-2 fw-bold" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Menu tidak aktif" style="cursor: not-allowed;"><i class="bi bi-person-square"></i> Akun</a>
+                <a href="../login" class="btn btn-outline-info me-2 fw-bold"><i class="bi bi-person-square"></i> Akun</a>
             </div>
         </div>
     </div>

@@ -4,6 +4,7 @@ function setelahTransaksi() {
         title: 'Skenario Transaksi Pembayaran',
         html: 'Elemen akan ke tahap selanjutnya pada <b></b> ms.',
         timer: 5000,
+        allowOutsideClick: false,
         timerProgressBar: true,
         didOpen: () => {
             Swal.showLoading()

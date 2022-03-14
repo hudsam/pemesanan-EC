@@ -30,6 +30,11 @@ $('#kirim-penilaian').on('click', function() {
         icon: 'success',
         title: 'Terima kasih umpan balik yang kamu berikan.',
     });
+
+    // Diarahkan ke halaman utama (landing page)
+    setTimeout(function() {
+        window.location.href = document.location.origin;
+    }, 6000);
 });
 
 $(function() {

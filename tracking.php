@@ -92,6 +92,29 @@
                                 <hr>
                                 <button type="button" class="btn btn-outline-primary btn-md" onclick="setelahTransaksi();"><i class="bi bi-wallet"></i> Tagihan Pembayaran</button>
                             </div>
+                            <div class="card">
+                                <h6 class="card-header bg-info text-white"><i class="bi bi-people-fill"></i> Mitra Eco-Clean</h6>
+                                <div class="card-body">
+                                    <div class="d-flex align-items-center mb-2">
+                                        <div class="flex-shrink-0">
+                                            <img src="https://www.random-name-generator.com/images/faces/female-asia/24.jpg" class="border border-secondary rounded p-1" width="75px" alt="">
+                                        </div>
+                                        <div class="flex-grow-1 ms-3">
+                                            <div class="fw-bolder"><i class="bi bi-person-badge"></i> Aisyah Suryatmi</div>
+                                            <div class="fst-normal text-muted"><i class="bi bi-telephone"></i> 089 457 593 421</div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center mt-2">
+                                        <div class="flex-shrink-0">
+                                            <img src="https://www.random-name-generator.com/images/faces/male-asia/08.jpg" class="border border-secondary rounded p-1" width="75px" alt="">
+                                        </div>
+                                        <div class="flex-grow-1 ms-3">
+                                            <div class="fw-bolder"><i class="bi bi-person-badge"></i> Drajat Prakasa</div>
+                                            <div class="fst-normal text-muted"><i class="bi bi-telephone"></i> 089 717 887 577</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -63,7 +63,7 @@
                                     </label>
                                 </div>
                             </div>
-                            <h4>Atau Pilih Paket</h4>
+                            <h4>Atau Paket</h4>
                             <small class="text-muted">Opsi lainnya adalah kamu dapat menentukan jenis pelayanan komplit dengan harga hemat</small>
                             <div class="row mt-3 mb-4">
                                 <div class="btn-group col-md-9" role="group" aria-label="Basic radio toggle button group">
@@ -109,7 +109,7 @@
                                 <div class="col-md-4">
                                     <div class="btn-group" role="group" aria-label="Basic outlined example">
                                         <button type="button" class="button-minus btn btn-outline-secondary mx-1 fw-bolder" data-field="quantity">➖</button>
-                                        <input type="number" step="1" min="1" value="0" name="quantity" class="form-control-plaintext border border-secondary text-center mx-1" readonly>
+                                        <input type="number" step="1" min="1" value="0" id="jumlah-kamar" name="quantity" class="form-control-plaintext border border-secondary text-center mx-1" readonly>
                                         <button type="button" class="button-plus btn btn-outline-secondary mx-1 fw-bolder" data-field="quantity">➕</button>
                                     </div>
                                     <div id="" class="form-text">Per-kamar Rp 15.000</div>
@@ -120,7 +120,7 @@
                                 <div class="col-md-4">
                                     <div class="btn-group" role="group" aria-label="Basic outlined example">
                                         <button type="button" class="button-minus btn btn-outline-secondary mx-1 fw-bolder" data-field="quantity">➖</button>
-                                        <input type="number" step="1" min="1" value="0" name="quantity" class="form-control-plaintext border border-secondary text-center mx-1" readonly>
+                                        <input type="number" step="1" min="1" value="0" id="jumlah-kamarmandi" name="quantity" class="form-control-plaintext border border-secondary text-center mx-1" readonly>
                                         <button type="button" class="button-plus btn btn-outline-secondary mx-1 fw-bolder" data-field="quantity">➕</button>
                                     </div>
                                     <div id="" class="form-text">Per-kamar mandi Rp 25.000</div>
@@ -131,7 +131,7 @@
                                 <div class="col-md-4">
                                     <div class="btn-group" role="group" aria-label="Basic outlined example">
                                         <button type="button" class="button-minus btn btn-outline-secondary mx-1 fw-bolder" data-field="quantity">➖</button>
-                                        <input type="number" step="1" min="1" value="0" name="quantity" class="form-control-plaintext border border-secondary text-center mx-1" readonly>
+                                        <input type="number" step="1" min="1" value="0" id="jumlah-ruangtengah" name="quantity" class="form-control-plaintext border border-secondary text-center mx-1" readonly>
                                         <button type="button" class="button-plus btn btn-outline-secondary mx-1 fw-bolder" data-field="quantity">➕</button>
                                     </div>
                                     <div id="" class="form-text">Per-ruang tengah Rp 15.000</div>
@@ -144,7 +144,7 @@
                                 <div class="col-md-4">
                                     <div class="btn-group" role="group" aria-label="Basic outlined example">
                                         <button type="button" class="button-minus btn btn-outline-secondary mx-1 fw-bolder" data-field="quantity">➖</button>
-                                        <input type="number" step="1" min="1" value="0" name="quantity" class="form-control-plaintext border border-secondary text-center mx-1" readonly>
+                                        <input type="number" step="1" min="1" value="0" id="jumlah-dapur" name="quantity" class="form-control-plaintext border border-secondary text-center mx-1" readonly>
                                         <button type="button" class="button-plus btn btn-outline-secondary mx-1 fw-bolder" data-field="quantity">➕</button>
                                     </div>
                                     <div id="" class="form-text">Per-dapur Rp 15.000</div>
@@ -155,18 +155,18 @@
                                 <div class="col-md-4">
                                     <div class="btn-group" role="group" aria-label="Basic outlined example">
                                         <button type="button" class="button-minus btn btn-outline-secondary mx-1 fw-bolder" data-field="quantity">➖</button>
-                                        <input type="number" step="1" min="1" value="0" name="quantity" class="form-control-plaintext border border-secondary text-center mx-1" readonly>
+                                        <input type="number" step="1" min="1" value="0" id="jumlah-kulkas" name="quantity" class="form-control-plaintext border border-secondary text-center mx-1" readonly>
                                         <button type="button" class="button-plus btn btn-outline-secondary mx-1 fw-bolder" data-field="quantity">➕</button>
                                     </div>
                                     <div id="" class="form-text">Per-kulkas Rp 15.000</div>
                                 </div>
                             </div>
                             <div class="row mt-1 mb-3">
-                                <label for="" class="col-md-2 col-form-label fw-bold">Pindah Kos</label>
+                                <label for="" class="col-md-2 col-form-label fw-bold">Pindah Kos <i class="bi bi-info-circle text-dark" data-bs-toggle="tooltip" data-bs-html="true" title="Jumlah kamar yang akan dibersihkan"></i></label>
                                 <div class="col-md-4">
                                     <div class="btn-group" role="group" aria-label="Basic outlined example">
                                         <button type="button" class="button-minus btn btn-outline-secondary mx-1 fw-bolder" data-field="quantity">➖</button>
-                                        <input type="number" step="1" min="1" value="0" name="quantity" class="form-control-plaintext border border-secondary text-center mx-1" readonly>
+                                        <input type="number" step="1" min="1" value="0" id="jumlah-kamarkos" name="quantity" class="form-control-plaintext border border-secondary text-center mx-1" readonly>
                                         <button type="button" class="button-plus btn btn-outline-secondary mx-1 fw-bolder" data-field="quantity">➕</button>
                                     </div>
                                     <div id="" class="form-text">Per-kamar Rp 15.000</div>
@@ -177,7 +177,7 @@
                                 <div class="col-md-4">
                                     <div class="btn-group" role="group" aria-label="Basic outlined example">
                                         <button type="button" class="button-minus btn btn-outline-secondary mx-1 fw-bolder" data-field="quantity">➖</button>
-                                        <input type="number" step="1" min="1" value="0" name="quantity" class="form-control-plaintext border border-secondary text-center mx-1" readonly>
+                                        <input type="number" step="1" min="1" value="0" id="jumlah-ecoenzyme" name="quantity" class="form-control-plaintext border border-secondary text-center mx-1" readonly>
                                         <button type="button" class="button-plus btn btn-outline-secondary mx-1 fw-bolder" data-field="quantity">➕</button>
                                     </div>
                                     <div id="" class="form-text">Per-botol Rp 10.000</div>
@@ -314,22 +314,48 @@
                                         <table class="table table-border table-hover" style="width: 100%;">
                                             <tbody>
                                                 <tr>
-                                                    <th colspan="2" class="text-center table-active">Biaya Pesanan</th>
+                                                    <th colspan="2" class="text-center table-active">Rincian Biaya Pesanan</th>
                                                 </tr>
                                                 <tr>
-                                                    <th>Layanan atau Paket <span class="badge bg-info"><small id="pilih-layanan"></small> | <i class="bi bi-eye-fill text-dark" data-bs-toggle="tooltip" data-bs-html="true" title="<em>Tooltip</em>"></i></span></th>
+                                                    <th>Layanan atau Paket <span class="badge bg-info"><small id="pilih-layanan"></small></span></th>
                                                     <td style="text-align: right;" id="harga-layanan"></td>
                                                 </tr>
-                                                <tr>
-                                                    <th>Tipe Ruangan <span class="badge bg-info" id="pilih-ruangan"></span></th>
-                                                    <td style="text-align: right;" id="harga-ruangan"></td>
+                                                <tr id="tipe-ruangan" class="d-none">
+                                                    <th colspan="2" class="table-active">Tipe Ruangan</th>
+                                                </tr>
+                                                <tr for="jumlah-kamar" class="d-none">
+                                                    <th>Kamar <span class="badge bg-info"><font id="satuan-kamar"></font> x 15.000</span></th>
+                                                    <td style="text-align: right;" for="harga-kamar"></td>
+                                                </tr>
+                                                <tr for="jumlah-kamarmandi" class="d-none">
+                                                    <th>Kamar Mandi <span class="badge bg-info"><font id="satuan-kamarmandi"></font> x 25.000</span></th>
+                                                    <td style="text-align: right;" for="harga-kamarmandi"></td>
+                                                </tr>
+                                                <tr for="jumlah-ruangtengah" class="d-none">
+                                                    <th>Ruang Tengah <span class="badge bg-info"><font id="satuan-ruangtengah"></font> x 15.000</span></th>
+                                                    <td style="text-align: right;" for="harga-ruangtengah"></td>
+                                                </tr>
+                                                <tr id="layanan-ekstra" class="d-none">
+                                                    <th colspan="2" class="table-active">Layanan Ekstra</th>
+                                                </tr>
+                                                <tr for="jumlah-dapur" class="d-none">
+                                                    <th>Dapur <span class="badge bg-info"><font id="satuan-dapur"></font> x 15.000</span></th>
+                                                    <td style="text-align: right;" for="harga-dapur"></td>
+                                                </tr>
+                                                <tr for="jumlah-kulkas" class="d-none">
+                                                    <th>Kulkas <span class="badge bg-info"><font id="satuan-kulkas"></font> x 15.000</span></th>
+                                                    <td style="text-align: right;" for="harga-kulkas"></td>
+                                                </tr>
+                                                <tr for="jumlah-kamarkos" class="d-none">
+                                                    <th>Pindah Kos <span class="badge bg-info"><font id="satuan-kamarkos"></font> x 15.000</span></th>
+                                                    <td style="text-align: right;" for="harga-kamarkos"></td>
+                                                </tr>
+                                                <tr for="jumlah-ecoenzyme" class="d-none">
+                                                    <th>Eco Enzyme (250ml) <span class="badge bg-info"><font id="satuan-ecoenzyme"></font> x 10.000</span></th>
+                                                    <td style="text-align: right;" for="harga-ecoenzyme"></td>
                                                 </tr>
                                                 <tr>
-                                                    <th>Layanan Ekstra <span class="badge bg-info" id="pilih-ekstra"></span></th>
-                                                    <td style="text-align: right;" id="harga-ekstra"></td>
-                                                </tr>
-                                                <tr>
-                                                    <th colspan="2" class="text-center table-active">Total yang Harus Dibayar</th>
+                                                    <th colspan="2" class="text-center table-primary">Total yang Harus Dibayar</th>
                                                 </tr>
                                                 <tr>
                                                     <th style="width: 65%;">Nominal</th>

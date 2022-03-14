@@ -47,12 +47,83 @@ $(document).ready(function(){
 
     // Aksi 'button next' pada tahap: Layanan
     $('#nextLayanan').on('click', function() {
+        var jumlahKamar = parseInt($('#jumlah-kamar').val());
+        var jumlahKamarMandi = parseInt($('#jumlah-kamarmandi').val());
+        var jumlahRuangTengah = parseInt($('#jumlah-ruangtengah').val());
+
+        if (jumlahKamar >= 1 || jumlahKamarMandi >= 1 || jumlahRuangTengah >= 1) {
+            $('#tipe-ruangan').removeClass('d-none');
+        } else {
+            $('#tipe-ruangan').addClass('d-none');
+        }
+        if (jumlahKamar >= 1) {
+            $('tr[for="jumlah-kamar"]').removeClass('d-none');
+            $('#satuan-kamar').html(jumlahKamar);
+            $('td[for="harga-kamar"]').html(jumlahKamar * 15000);
+        } else {
+            $('tr[for="jumlah-kamar"]').addClass('d-none');
+        }
+        if (jumlahKamarMandi >= 1) {
+            $('tr[for="jumlah-kamarmandi"]').removeClass('d-none');
+            $('#satuan-kamarmandi').html(jumlahKamarMandi);
+            $('td[for="harga-kamarmandi"]').html(jumlahKamarMandi * 25000);
+        } else {
+            $('tr[for="jumlah-kamarmandi"]').addClass('d-none');
+        }
+        if (jumlahRuangTengah >= 1) {
+            $('tr[for="jumlah-ruangtengah"]').removeClass('d-none');
+            $('#satuan-ruangtengah').html(jumlahRuangTengah);
+            $('td[for="harga-ruangtengah"]').html(jumlahRuangTengah * 15000);
+        } else {
+            $('tr[for="jumlah-ruangtengah"]').addClass('d-none');
+        }
+
+        var jumlahDapur = parseInt($('#jumlah-dapur').val());
+        var jumlahKulkas = parseInt($('#jumlah-kulkas').val());
+        var jumlahKamarKos= parseInt($('#jumlah-kamarkos').val());
+        var jumlahEcoEnzyme = parseInt($('#jumlah-ecoenzyme').val());
+
+        if (jumlahDapur >= 1 || jumlahKulkas >= 1 || jumlahKamarKos >= 1 || jumlahEcoEnzyme >= 1) {
+            $('#layanan-ekstra').removeClass('d-none')
+        } else {
+            $('#layanan-ekstra').addClass('d-none');
+        }
+        if (jumlahDapur >= 1) {
+            $('tr[for="jumlah-dapur"]').removeClass('d-none');
+            $('#satuan-dapur').html(jumlahDapur);
+            $('td[for="harga-dapur"]').html(jumlahDapur * 15000);
+        } else {
+            $('tr[for="jumlah-dapur"]').addClass('d-none');
+        }
+        if (jumlahKulkas >= 1) {
+            $('tr[for="jumlah-kulkas"]').removeClass('d-none');
+            $('#satuan-kulkas').html(jumlahKulkas);
+            $('td[for="harga-kulkas"]').html(jumlahKulkas * 15000);
+        } else {
+            $('tr[for="jumlah-kulkas"]').addClass('d-none');
+        }
+        if (jumlahKamarKos >= 1) {
+            $('tr[for="jumlah-kamarkos"]').removeClass('d-none');
+            $('#satuan-kamarkos').html(jumlahKamarKos);
+            $('td[for="harga-kamarkos"]').html(jumlahKamarKos * 15000);
+        } else {
+            $('tr[for="jumlah-kamarkos"]').addClass('d-none');
+        }
+        if (jumlahEcoEnzyme >= 1) {
+            $('tr[for="jumlah-ecoenzyme"]').removeClass('d-none');
+            $('#satuan-ecoenzyme').html(jumlahEcoEnzyme);
+            $('td[for="harga-ecoenzyme"]').html(jumlahEcoEnzyme * 10000);
+        } else {
+            $('tr[for="jumlah-ecoenzyme"]').addClass('d-none');
+        }
+
         if (
             $('#pilih-layanan').text() !== '' & $('#harga-layanan').text() !== ''
         )
         {
             $('#nextLayanan').addClass('btn-next');
             totalBiayaPesanan();
+            setInterval(function() {$('#nextLayanan').removeClass('btn-next'); }, 1000);
         }
         else
         {

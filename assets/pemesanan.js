@@ -45,75 +45,10 @@ $(document).ready(function(){
         $('#harga-layanan').html(harga);
     });
 
-    $('label[for="ruangan-kamar"]').on('click', function() {
-        var ruangan = $(this).data('ruangan');
-        var harga = $(this).data('harga');
-        $('#pilih-ruangan').html(ruangan);
-        $('#harga-ruangan').html(harga);
-    });
-
-    $('label[for="ruangan-kamarmandi"]').on('click', function() {
-        var ruangan = $(this).data('ruangan');
-        var harga = $(this).data('harga');
-        $('#pilih-ruangan').html(ruangan);
-        $('#harga-ruangan').html(harga);
-    });
-
-    $('label[for="ruangan-ruangtengah"]').on('click', function() {
-        var ruangan = $(this).data('ruangan');
-        var harga = $(this).data('harga');
-        $('#pilih-ruangan').html(ruangan);
-        $('#harga-ruangan').html(harga);
-    });
-
-    $('label[for="ruangan-tidakada"]').on('click', function() {
-        var ruangan = $(this).data('ruangan');
-        var harga = $(this).data('harga');
-        $('#pilih-ruangan').html(ruangan);
-        $('#harga-ruangan').html(harga);
-    });
-
-    $('label[for="ekstra-dapur"]').on('click', function() {
-        var ekstra = $(this).data('ekstra');
-        var harga = $(this).data('harga');
-        $('#pilih-ekstra').html(ekstra);
-        $('#harga-ekstra').html(harga);
-    });
-
-    $('label[for="ekstra-kulkas"]').on('click', function() {
-        var ekstra = $(this).data('ekstra');
-        var harga = $(this).data('harga');
-        $('#pilih-ekstra').html(ekstra);
-        $('#harga-ekstra').html(harga);
-    });
-
-    $('label[for="ekstra-pindahkos"]').on('click', function() {
-        var ekstra = $(this).data('ekstra');
-        var harga = $(this).data('harga');
-        $('#pilih-ekstra').html(ekstra);
-        $('#harga-ekstra').html(harga);
-    });
-
-    $('label[for="ekstra-ecoenzyme"]').on('click', function() {
-        var ekstra = $(this).data('ekstra');
-        var harga = $(this).data('harga');
-        $('#pilih-ekstra').html(ekstra);
-        $('#harga-ekstra').html(harga);
-    });
-
-    $('label[for="ekstra-tidakada"]').on('click', function() {
-        var ekstra = $(this).data('ekstra');
-        var harga = $(this).data('harga');
-        $('#pilih-ekstra').html(ekstra);
-        $('#harga-ekstra').html(harga);
-    });
-
     // Aksi 'button next' pada tahap: Layanan
     $('#nextLayanan').on('click', function() {
         if (
-            ($('#pilih-layanan').text() !== '' & $('#harga-layanan').text() !== '')
-            & ($('#pilih-ruangan').text() !== '' & $('#harga-ruangan').text() !== '')
-            & ($('#pilih-ekstra').text() !== '' & $('#harga-ekstra').text() !== '')
+            $('#pilih-layanan').text() !== '' & $('#harga-layanan').text() !== ''
         )
         {
             $('#nextLayanan').addClass('btn-next');
@@ -130,12 +65,49 @@ $(document).ready(function(){
 
     function totalBiayaPesanan() {
         var layanan = $('#harga-layanan').text().replace('Rp ', '');
-        var ruangan = $('#harga-ruangan').text().replace('Rp ', '');
-        var ekstra = $('#harga-ekstra').text().replace('Rp ', '');
+        var ruangan = 0;
+        var ekstra = 0;
 
         var total = parseInt(layanan) + parseInt(ruangan) + parseInt(ekstra);
         $('.total-tagihan').text('Rp ' + total + '.000');
     }
+
+    // Referensi: codepen.io/anitaparmar26/pen/BaLYMeN
+    function incrementValue(e) {
+        e.preventDefault();
+        var fieldName = $(e.target).data('field');
+        var parent = $(e.target).closest('div');
+        var currentVal = parseInt(parent.find('input[name=' + fieldName + ']').val(), 10);
+
+        if (!isNaN(currentVal)) {
+            parent.find('input[name=' + fieldName + ']').val(currentVal + 1);
+        } else {
+            parent.find('input[name=' + fieldName + ']').val(0);
+        }
+    }
+
+    function decrementValue(e) {
+        e.preventDefault();
+        var fieldName = $(e.target).data('field');
+        var parent = $(e.target).closest('div');
+        var currentVal = parseInt(parent.find('input[name=' + fieldName + ']').val(), 10);
+
+        if (!isNaN(currentVal) && currentVal > 0) {
+            parent.find('input[name=' + fieldName + ']').val(currentVal - 1);
+        } else {
+            parent.find('input[name=' + fieldName + ']').val(0);
+        }
+    }
+
+    $('.btn-group').on('click', '.button-plus', function(e) {
+        incrementValue(e);
+    });
+
+    $('.btn-group').on('click', '.button-minus', function(e) {
+        decrementValue(e);
+    });
+
+
 
     function scroll_to_class(element_class, removed_height) {
         var scroll_to = $(element_class).offset().top - removed_height;

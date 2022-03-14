@@ -104,50 +104,83 @@
                             </div>
                             <h4>Pilih Tipe Ruangan</h4>
                             <small class="text-muted">Pilih jenis tempat yang akan dibersihkan</small>
-                            <div class="row mt-3 mb-4">
-                                <div class="btn-group-vertical col-md-5" role="group" aria-label="Basic radio toggle button group">
-                                    <input type="radio" class="btn-check" name="jenis-ruangan" id="ruangan-kamar" autocomplete="off">
-                                    <label class="btn btn-outline-primary mb-1" for="ruangan-kamar" data-ruangan="1 Kamar" data-harga="Rp 15.000">
-                                        <h6 class="card-title">1 Kamar Rp 15.000</h6>
-                                    </label>
-                                    <input type="radio" class="btn-check" name="jenis-ruangan" id="ruangan-kamarmandi" autocomplete="off">
-                                    <label class="btn btn-outline-primary mb-1" for="ruangan-kamarmandi" data-ruangan="1 Kamar Mandi" data-harga="Rp 25.000">
-                                        <h6 class="card-title">1 Kamar Mandi Rp 25.000</h6>
-                                    </label>
-                                    <input type="radio" class="btn-check" name="jenis-ruangan" id="ruangan-ruangtengah" autocomplete="off">
-                                    <label class="btn btn-outline-primary mb-1" for="ruangan-ruangtengah" data-ruangan="1 Ruang Tengah" data-harga="Rp 15.000">
-                                        <h6 class="card-title">1 Ruang Tengah Rp 15.000</h6>
-                                    </label>
-                                    <input type="radio" class="btn-check" name="jenis-ruangan" id="ruangan-tidakada" autocomplete="off">
-                                    <label class="btn btn-outline-danger mb-1" for="ruangan-tidakada" data-ruangan="Tidak Ada" data-harga="Rp 0">
-                                        <h6 class="card-title"><i class="bi bi-x-circle-fill"></i> Tidak Memilih</h6>
-                                    </label>
+                            <div class="row mt-1 mb-3">
+                                <label for="" class="col-md-2 col-form-label fw-bold">Kamar</label>
+                                <div class="col-md-4">
+                                    <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                        <button type="button" class="button-minus btn btn-outline-secondary mx-1 fw-bolder" data-field="quantity">➖</button>
+                                        <input type="number" step="1" min="1" value="0" name="quantity" class="form-control-plaintext border border-secondary text-center mx-1" readonly>
+                                        <button type="button" class="button-plus btn btn-outline-secondary mx-1 fw-bolder" data-field="quantity">➕</button>
+                                    </div>
+                                    <div id="" class="form-text">Per-kamar Rp 15.000</div>
+                                </div>
+                            </div>
+                            <div class="row mt-1 mb-3">
+                                <label for="" class="col-md-2 col-form-label fw-bold">Kamar Mandi</label>
+                                <div class="col-md-4">
+                                    <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                        <button type="button" class="button-minus btn btn-outline-secondary mx-1 fw-bolder" data-field="quantity">➖</button>
+                                        <input type="number" step="1" min="1" value="0" name="quantity" class="form-control-plaintext border border-secondary text-center mx-1" readonly>
+                                        <button type="button" class="button-plus btn btn-outline-secondary mx-1 fw-bolder" data-field="quantity">➕</button>
+                                    </div>
+                                    <div id="" class="form-text">Per-kamar mandi Rp 25.000</div>
+                                </div>
+                            </div>
+                            <div class="row mt-1 mb-4">
+                                <label for="" class="col-md-2 col-form-label fw-bold">Ruang Tengah</label>
+                                <div class="col-md-4">
+                                    <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                        <button type="button" class="button-minus btn btn-outline-secondary mx-1 fw-bolder" data-field="quantity">➖</button>
+                                        <input type="number" step="1" min="1" value="0" name="quantity" class="form-control-plaintext border border-secondary text-center mx-1" readonly>
+                                        <button type="button" class="button-plus btn btn-outline-secondary mx-1 fw-bolder" data-field="quantity">➕</button>
+                                    </div>
+                                    <div id="" class="form-text">Per-ruang tengah Rp 15.000</div>
                                 </div>
                             </div>
                             <h4>Layanan Ekstra <font class="text-muted">(*) optional</font></h4>
                             <small class="text-muted">Kamu dapat menambahkan layanan tambahan jika dibutuhkan</small>
-                            <div class="row mt-3 mb-2">
-                                <div class="btn-group-vertical col-md-5" role="group" aria-label="Basic radio toggle button group">
-                                    <input type="radio" class="btn-check" name="layanan-ekstra" id="ekstra-dapur" autocomplete="off">
-                                    <label class="btn btn-outline-primary mb-1" for="ekstra-dapur" data-ekstra="Dapur" data-harga="Rp 15.000">
-                                        <h6 class="card-title">Dapur Rp 15.000</h6>
-                                    </label>
-                                    <input type="radio" class="btn-check" name="layanan-ekstra" id="ekstra-kulkas" autocomplete="off">
-                                    <label class="btn btn-outline-primary mb-1" for="ekstra-kulkas" data-ekstra="Kulkas" data-harga="Rp 15.000">
-                                        <h6 class="card-title">Kulkas Rp 15.000</h6>
-                                    </label>
-                                    <input type="radio" class="btn-check" name="layanan-ekstra" id="ekstra-pidahkos" autocomplete="off">
-                                    <label class="btn btn-outline-primary mb-1" for="ekstra-pidahkos" data-ekstra="1 Kamar" data-harga="Rp 15.000">
-                                        <h6 class="card-title">Pindahan tipe kos 1 kamar Rp 15.000</h6>
-                                    </label>
-                                    <input type="radio" class="btn-check" name="layanan-ekstra" id="ekstra-ecoenzyme" autocomplete="off">
-                                    <label class="btn btn-outline-primary mb-1" for="ekstra-ecoenzyme" data-ekstra="Eco Enzyme 250ml" data-harga="Rp 10.000">
-                                        <h6 class="card-title">Eco Enzyme 250ml Rp 10.000</h6>
-                                    </label>
-                                    <input type="radio" class="btn-check" name="layanan-ekstra" id="ekstra-tidakada" autocomplete="off">
-                                    <label class="btn btn-outline-danger mb-1" for="ekstra-tidakada" data-ekstra="Tidak Ada" data-harga="Rp 0">
-                                        <h6 class="card-title"><i class="bi bi-x-circle-fill"></i> Tidak Memilih</h6>
-                                    </label>
+                            <div class="row mt-1 mb-3">
+                                <label for="" class="col-md-2 col-form-label fw-bold">Dapur</label>
+                                <div class="col-md-4">
+                                    <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                        <button type="button" class="button-minus btn btn-outline-secondary mx-1 fw-bolder" data-field="quantity">➖</button>
+                                        <input type="number" step="1" min="1" value="0" name="quantity" class="form-control-plaintext border border-secondary text-center mx-1" readonly>
+                                        <button type="button" class="button-plus btn btn-outline-secondary mx-1 fw-bolder" data-field="quantity">➕</button>
+                                    </div>
+                                    <div id="" class="form-text">Per-dapur Rp 15.000</div>
+                                </div>
+                            </div>
+                            <div class="row mt-1 mb-3">
+                                <label for="" class="col-md-2 col-form-label fw-bold">Kulkas</label>
+                                <div class="col-md-4">
+                                    <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                        <button type="button" class="button-minus btn btn-outline-secondary mx-1 fw-bolder" data-field="quantity">➖</button>
+                                        <input type="number" step="1" min="1" value="0" name="quantity" class="form-control-plaintext border border-secondary text-center mx-1" readonly>
+                                        <button type="button" class="button-plus btn btn-outline-secondary mx-1 fw-bolder" data-field="quantity">➕</button>
+                                    </div>
+                                    <div id="" class="form-text">Per-kulkas Rp 15.000</div>
+                                </div>
+                            </div>
+                            <div class="row mt-1 mb-3">
+                                <label for="" class="col-md-2 col-form-label fw-bold">Pindah Kos</label>
+                                <div class="col-md-4">
+                                    <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                        <button type="button" class="button-minus btn btn-outline-secondary mx-1 fw-bolder" data-field="quantity">➖</button>
+                                        <input type="number" step="1" min="1" value="0" name="quantity" class="form-control-plaintext border border-secondary text-center mx-1" readonly>
+                                        <button type="button" class="button-plus btn btn-outline-secondary mx-1 fw-bolder" data-field="quantity">➕</button>
+                                    </div>
+                                    <div id="" class="form-text">Per-kamar Rp 15.000</div>
+                                </div>
+                            </div>
+                            <div class="row mt-1 mb-4">
+                                <label for="" class="col-md-2 col-form-label fw-bold">Eco Enzyme (250ml)</label>
+                                <div class="col-md-4">
+                                    <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                        <button type="button" class="button-minus btn btn-outline-secondary mx-1 fw-bolder" data-field="quantity">➖</button>
+                                        <input type="number" step="1" min="1" value="0" name="quantity" class="form-control-plaintext border border-secondary text-center mx-1" readonly>
+                                        <button type="button" class="button-plus btn btn-outline-secondary mx-1 fw-bolder" data-field="quantity">➕</button>
+                                    </div>
+                                    <div id="" class="form-text">Per-botol Rp 10.000</div>
                                 </div>
                             </div>
                         </div>

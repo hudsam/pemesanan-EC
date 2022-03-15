@@ -1,6 +1,4 @@
 $(document).ready(function(){
-    /*$('#tanggal').val('2022-01-03'); // Tahun-Tanggal-Bulan
-    $('#jam').val('08:00:00');*/
     const tarifEcoEnzyme = 10000;
     const tarifKamar = tarifRuangTengah = tarifDapur = tarifKulkas = tarifKamarKos = 15000;
     const tarifKamarMandi = 25000;
@@ -31,21 +29,21 @@ $(document).ready(function(){
         var paket = $(this).data('paket');
         var harga = $(this).data('harga');
         $('#pilih-paket').html(paket);
-        $('#harga-paket').html(harga);
+        $('#harga-paket').html(notasiRupiah(harga));
     });
 
     $('label[for="paket-super"]').on('click', function() {
         var paket = $(this).data('paket');
         var harga = $(this).data('harga');
         $('#pilih-paket').html(paket);
-        $('#harga-paket').html(harga);
+        $('#harga-paket').html(notasiRupiah(harga));
     });
 
     $('label[for="paket-standard"]').on('click', function() {
         var paket = $(this).data('paket');
         var harga = $(this).data('harga');
         $('#pilih-paket').html(paket);
-        $('#harga-paket').html(harga);
+        $('#harga-paket').html(notasiRupiah(harga));
     });
 
     // Aksi 'button next' pada tahap: Layanan
@@ -62,7 +60,7 @@ $(document).ready(function(){
         if (jumlahKamar >= 1) {
             $('tr[for="jumlah-kamar"]').removeClass('d-none');
             $('#satuan-kamar').html(jumlahKamar);
-            $('td[for="harga-kamar"]').html(jumlahKamar * tarifKamar);
+            $('td[for="harga-kamar"]').html(notasiRupiah(jumlahKamar * tarifKamar));
         } else {
             $('tr[for="jumlah-kamar"]').addClass('d-none');
             $('td[for="harga-kamar"]').html('0');
@@ -70,7 +68,7 @@ $(document).ready(function(){
         if (jumlahKamarMandi >= 1) {
             $('tr[for="jumlah-kamarmandi"]').removeClass('d-none');
             $('#satuan-kamarmandi').html(jumlahKamarMandi);
-            $('td[for="harga-kamarmandi"]').html(jumlahKamarMandi * tarifKamarMandi);
+            $('td[for="harga-kamarmandi"]').html(notasiRupiah(jumlahKamarMandi * tarifKamarMandi));
         } else {
             $('tr[for="jumlah-kamarmandi"]').addClass('d-none');
             $('td[for="harga-kamarmandi"]').html('0');
@@ -78,7 +76,7 @@ $(document).ready(function(){
         if (jumlahRuangTengah >= 1) {
             $('tr[for="jumlah-ruangtengah"]').removeClass('d-none');
             $('#satuan-ruangtengah').html(jumlahRuangTengah);
-            $('td[for="harga-ruangtengah"]').html(jumlahRuangTengah * tarifRuangTengah);
+            $('td[for="harga-ruangtengah"]').html(notasiRupiah(jumlahRuangTengah * tarifRuangTengah));
         } else {
             $('tr[for="jumlah-ruangtengah"]').addClass('d-none');
             $('td[for="harga-ruangtengah"]').html('0');
@@ -97,7 +95,7 @@ $(document).ready(function(){
         if (jumlahDapur >= 1) {
             $('tr[for="jumlah-dapur"]').removeClass('d-none');
             $('#satuan-dapur').html(jumlahDapur);
-            $('td[for="harga-dapur"]').html(jumlahDapur * tarifDapur);
+            $('td[for="harga-dapur"]').html(notasiRupiah(jumlahDapur * tarifDapur));
         } else {
             $('tr[for="jumlah-dapur"]').addClass('d-none');
             $('td[for="harga-dapur"]').html('0');
@@ -105,7 +103,7 @@ $(document).ready(function(){
         if (jumlahKulkas >= 1) {
             $('tr[for="jumlah-kulkas"]').removeClass('d-none');
             $('#satuan-kulkas').html(jumlahKulkas);
-            $('td[for="harga-kulkas"]').html(jumlahKulkas * tarifKulkas);
+            $('td[for="harga-kulkas"]').html(notasiRupiah(jumlahKulkas * tarifKulkas));
         } else {
             $('tr[for="jumlah-kulkas"]').addClass('d-none');
             $('td[for="harga-kulkas"]').html('0');
@@ -113,7 +111,7 @@ $(document).ready(function(){
         if (jumlahKamarKos >= 1) {
             $('tr[for="jumlah-kamarkos"]').removeClass('d-none');
             $('#satuan-kamarkos').html(jumlahKamarKos);
-            $('td[for="harga-kamarkos"]').html(jumlahKamarKos * tarifKamarKos);
+            $('td[for="harga-kamarkos"]').html(notasiRupiah(jumlahKamarKos * tarifKamarKos));
         } else {
             $('tr[for="jumlah-kamarkos"]').addClass('d-none');
             $('td[for="harga-kamarkos"]').html('0');
@@ -121,7 +119,7 @@ $(document).ready(function(){
         if (jumlahEcoEnzyme >= 1) {
             $('tr[for="jumlah-ecoenzyme"]').removeClass('d-none');
             $('#satuan-ecoenzyme').html(jumlahEcoEnzyme);
-            $('td[for="harga-ecoenzyme"]').html(jumlahEcoEnzyme * tarifEcoEnzyme);
+            $('td[for="harga-ecoenzyme"]').html(notasiRupiah(jumlahEcoEnzyme * tarifEcoEnzyme));
         } else {
             $('tr[for="jumlah-ecoenzyme"]').addClass('d-none');
             $('td[for="harga-ecoenzyme"]').html('0');
@@ -145,21 +143,21 @@ $(document).ready(function(){
     });
 
     function totalBiayaPesanan() {
-        var hargaPaket = parseInt($('#harga-paket').text());
+        var hargaPaket = parseInt(hapusNotasiRp($('#harga-paket').text()));
 
-        var hargaKamar = (parseInt($('#jumlah-kamar').val()) >= 1) ? parseInt($('td[for="harga-kamar"]').text()) : 0;
-        var hargaKamarMandi = (parseInt($('#jumlah-kamarmandi').val()) >= 1) ? parseInt($('td[for="harga-kamarmandi"]').text()) : 0;
-        var hargaRuangTengah = (parseInt($('#jumlah-ruangtengah').val()) >= 1) ? parseInt($('td[for="harga-ruangtengah"]').text()) : 0;
+        var hargaKamar = (parseInt($('#jumlah-kamar').val()) >= 1) ? parseInt(hapusNotasiRp($('td[for="harga-kamar"]').text())) : 0;
+        var hargaKamarMandi = (parseInt($('#jumlah-kamarmandi').val()) >= 1) ? parseInt(hapusNotasiRp($('td[for="harga-kamarmandi"]').text())) : 0;
+        var hargaRuangTengah = (parseInt($('#jumlah-ruangtengah').val()) >= 1) ? parseInt(hapusNotasiRp($('td[for="harga-ruangtengah"]').text())) : 0;
 
-        var hargaDapur = (parseInt($('#jumlah-dapur').val()) >= 1) ? parseInt($('td[for="harga-dapur"]').text()) : 0;
-        var hargaKulkas = (parseInt($('#jumlah-kulkas').val()) >= 1) ? parseInt($('td[for="harga-kulkas"]').text()) : 0;
-        var hargaKamarKos = (parseInt($('#jumlah-kamarkos').val()) >= 1) ? parseInt($('td[for="harga-kamarkos"]').text()) : 0;
-        var hargaEcoEnzyme = (parseInt($('#jumlah-ecoenzyme').val()) >= 1) ? parseInt($('td[for="harga-ecoenzyme"]').text()) : 0;
+        var hargaDapur = (parseInt($('#jumlah-dapur').val()) >= 1) ? parseInt(hapusNotasiRp($('td[for="harga-dapur"]').text())) : 0;
+        var hargaKulkas = (parseInt($('#jumlah-kulkas').val()) >= 1) ? parseInt(hapusNotasiRp($('td[for="harga-kulkas"]').text())) : 0;
+        var hargaKamarKos = (parseInt($('#jumlah-kamarkos').val()) >= 1) ? parseInt(hapusNotasiRp($('td[for="harga-kamarkos"]').text())) : 0;
+        var hargaEcoEnzyme = (parseInt($('#jumlah-ecoenzyme').val()) >= 1) ? parseInt(hapusNotasiRp($('td[for="harga-ecoenzyme"]').text())) : 0;
 
         var total = hargaPaket
                     + hargaKamar + hargaKamarMandi + hargaRuangTengah
                     + hargaDapur + hargaKulkas + hargaKamarKos + hargaEcoEnzyme;
-        $('.total-tagihan').text(total);
+        $('.total-tagihan').text(notasiRupiah(total));
     }
 
     // Referensi: codepen.io/anitaparmar26/pen/BaLYMeN
@@ -222,6 +220,26 @@ $(document).ready(function(){
         $('td[for="data-surel"]').text(surel);
         $('font[for="data-gawai"]').text(gawai);
     });
+
+    // Referensi: codepen.io/malasngoding/pen/EedMvv
+    function notasiRupiah(nominal) {
+        var prefix = 'Rp. ';
+        var number_string = nominal.toString(),
+            split = number_string.split(','),
+            sisa = split[0].length % 3,
+            rupiah = split[0].substr(0, sisa),
+            ribuan = split[0].substr(sisa).match(/\d{3}/gi);
+        if (ribuan) {
+            separator = sisa ? '.' : '';
+            rupiah += separator + ribuan.join('.');
+        }
+        rupiah = split[1] != undefined ? rupiah + ',' + split[1] : rupiah;
+        return prefix == undefined ? rupiah : rupiah ? 'Rp. ' + rupiah : '';
+    }
+
+    function hapusNotasiRp(nominal) {
+        return nominal.replace(/[^,\d]/g, '');
+    }
 
     function scroll_to_class(element_class, removed_height) {
         var scroll_to = $(element_class).offset().top - removed_height;

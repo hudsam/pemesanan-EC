@@ -270,7 +270,6 @@ $(document).ready(function(){
         });
 
         // step selanjutnya (ketika klik tombol selanjutnya)
-
         $(document).on('click', '.f1 .btn-next', function() {
         // $('.f1 .btn-next').on('click', function() {
             var parent_fieldset = $(this).parents('fieldset');
@@ -280,7 +279,7 @@ $(document).ready(function(){
             var progress_line = $(this).parents('.f1').find('.f1-progress-line');
 
             // validasi form
-            parent_fieldset.find('input[type="text"], input[type="password"], textarea').each(function() {
+            parent_fieldset.find('input[type="date"], input[type="time"], input[type="text"], input[type="number"], input[type="email"]').each(function() {
                 if( $(this).val() == "" ) {
                     $(this).addClass('input-error');
                     next_step = false;

@@ -3,26 +3,20 @@ $(document).ready(function(){
     const tarifKamar = tarifRuangTengah = tarifDapur = tarifKulkas = tarifKamarKos = 15000;
     const tarifKamarMandi = 25000;
 
-    // Menentukan layanan atau paket
+    // Menentukan araa & paket
     $('label[for="area-rumah"]').on('click', function() {
-        var layanan = $(this).data('layanan');
-        var harga = $(this).data('harga');
-        $('#pilih-layanan').html(layanan);
-        $('#harga-layanan').html(harga);
+        var area = $(this).data('area');
+        $('#pilih-area').html(area);
     });
 
     $('label[for="area-koskontrak"]').on('click', function() {
-        var layanan = $(this).data('layanan');
-        var harga = $(this).data('harga');
-        $('#pilih-layanan').html(layanan);
-        $('#harga-layanan').html(harga);
+        var area = $(this).data('area');
+        $('#pilih-area').html(area);
     });
 
     $('label[for="area-apartemen"]').on('click', function() {
-        var layanan = $(this).data('layanan');
-        var harga = $(this).data('harga');
-        $('#pilih-layanan').html(layanan);
-        $('#harga-layanan').html(harga);
+        var area = $(this).data('area');
+        $('#pilih-area').html(area);
     });
 
     $('label[for="paket-basic"]').on('click', function() {

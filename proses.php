@@ -42,29 +42,29 @@
                     <div class="card">
                         <h5 class="card-header bg-white"></h5>
                         <div class="card-body">
-                            <h4>Pilih Layanan</h4>
+                            <h4>Pilih Area Pembersihan</h4>
                             <small class="text-muted">Tentukan jenis pelayanan yang sesuai dengan ruangan atau lingkungan yang ingin dibersihkan</small>
                             <div class="row mt-3 mb-2">
                                 <div class="btn-group col-md-9" role="group" aria-label="Basic radio toggle button group">
-                                    <input type="radio" class="btn-check" name="jenis-layanan" id="area-rumah" autocomplete="off">
-                                    <label class="btn btn-outline-primary me-3" for="area-rumah" data-layanan="Rumah" data-harga="Rp 0">
+                                    <input type="radio" class="btn-check" name="area-layanan" id="area-rumah" autocomplete="off">
+                                    <label class="btn btn-outline-primary me-3" for="area-rumah" data-area="Rumah">
                                         <h4><i class="bi bi-house-door"></i></h4>
                                         <h6 class="card-title">Rumah</h6>
                                     </label>
-                                    <input type="radio" class="btn-check" name="jenis-layanan" id="area-koskontrak" autocomplete="off">
-                                    <label class="btn btn-outline-primary me-3" for="area-koskontrak" data-layanan="Kos/Kontrak" data-harga="Rp 0">
+                                    <input type="radio" class="btn-check" name="area-layanan" id="area-koskontrak" autocomplete="off">
+                                    <label class="btn btn-outline-primary me-3" for="area-koskontrak" data-area="Kos/Kontrak">
                                         <h4><i class="bi bi-house"></i></h4>
                                         <h6 class="card-title">Kos/Kontak</h6>
                                     </label>
-                                    <input type="radio" class="btn-check" name="jenis-layanan" id="area-apartemen" autocomplete="off">
-                                    <label class="btn btn-outline-primary me-3" for="area-apartemen" data-layanan="Apartemen" data-harga="Rp 0">
+                                    <input type="radio" class="btn-check" name="area-layanan" id="area-apartemen" autocomplete="off">
+                                    <label class="btn btn-outline-primary me-3" for="area-apartemen" data-area="Apartemen">
                                         <h4><i class="bi bi-building"></i></h4>
                                         <h6 class="card-title">Apartemen</h6>
                                     </label>
                                 </div>
                             </div>
-                            <h4>Atau Paket</h4>
-                            <small class="text-muted">Opsi lainnya adalah kamu dapat menentukan jenis pelayanan komplit dengan harga hemat</small>
+                            <h4>Tentukan Paket</h4>
+                            <small class="text-muted">Kamu dapat menentukan jenis pelayanan komplit dengan harga hemat</small>
                             <div class="row mt-3 mb-4">
                                 <div class="btn-group col-md-9" role="group" aria-label="Basic radio toggle button group">
                                     <input type="radio" class="btn-check" name="jenis-layanan" id="paket-basic" autocomplete="off">
@@ -328,7 +328,7 @@
                                                     <th colspan="2" class="text-center table-active">Rincian Biaya Pesanan</th>
                                                 </tr>
                                                 <tr>
-                                                    <th>Layanan atau Paket <span class="badge bg-info"><small id="pilih-paket"></small></span></th>
+                                                    <th>Area & Paket <span class="badge bg-info"><small id="pilih-area"></small> | <small id="pilih-paket"></small></span></th>
                                                     <td style="text-align: right;" id="harga-paket"></td>
                                                 </tr>
                                                 <tr id="tipe-ruangan" class="d-none">

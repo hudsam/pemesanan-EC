@@ -68,7 +68,7 @@
                             <div class="row mt-3 mb-4">
                                 <div class="btn-group col-md-9" role="group" aria-label="Basic radio toggle button group">
                                     <input type="radio" class="btn-check" name="jenis-layanan" id="paket-basic" autocomplete="off">
-                                    <label class="btn btn-outline-primary me-3 col-sm-2" for="paket-basic" data-paket="Paket Basic" data-harga="Rp 25.000">
+                                    <label class="btn btn-outline-primary me-3 col-sm-2" for="paket-basic" data-paket="Paket Basic" data-harga="25000">
                                         <h6>Basic Plan</h6>
                                         <small class="d-none d-md-block d-lg-block card-title">25 Ribu/kunjungan</small>
                                         <hr class="d-none d-md-block d-lg-block dropdown-divider">
@@ -79,7 +79,7 @@
                                         <small class="d-none d-md-block d-lg-block" style="text-align: left !important;"><i class="bi bi-x-circle-fill text-danger ms-2 me-3"></i> 2 Kamar</small>
                                     </label>
                                     <input type="radio" class="btn-check" name="jenis-layanan" id="paket-super" autocomplete="off">
-                                    <label class="btn btn-outline-primary me-3 col-sm-2" for="paket-super" data-paket="Paket Super" data-harga="Rp 100.000">
+                                    <label class="btn btn-outline-primary me-3 col-sm-2" for="paket-super" data-paket="Paket Super" data-harga="100000">
                                         <h6>Super Plan</h6>
                                         <small class="d-none d-md-block d-lg-block card-title">100 Ribu/kunjungan</small>
                                         <hr class="d-none d-md-block d-lg-block dropdown-divider">
@@ -90,7 +90,7 @@
                                         <small class="d-none d-md-block d-lg-block" style="text-align: left !important;"><i class="bi bi-check-circle-fill text-success ms-2 me-3"></i> 2 Kamar</small>
                                     </label>
                                     <input type="radio" class="btn-check" name="jenis-layanan" id="paket-standard" autocomplete="off">
-                                    <label class="btn btn-outline-primary me-3 col-sm-2" for="paket-standard" data-paket="Paket Standard" data-harga="Rp 55.000">
+                                    <label class="btn btn-outline-primary me-3 col-sm-2" for="paket-standard" data-paket="Paket Standard" data-harga="55000">
                                         <h6>Standard Plan</h6>
                                         <small class="d-none d-md-block d-lg-block card-title">55 Ribu/kunjungan</small>
                                         <hr class="d-none d-md-block d-lg-block dropdown-divider">
@@ -120,7 +120,7 @@
                                 <div class="col-md-4">
                                     <div class="btn-group" role="group" aria-label="Basic outlined example">
                                         <button type="button" class="button-minus btn btn-outline-secondary mx-1 fw-bolder" data-field="quantity">➖</button>
-                                        <input type="number" step="1" min="1" value="0" id="jumlah-kamarmandi" name="quantity" class="form-control-plaintext border border-secondary text-center mx-1" readonly>
+                                        <input type="number" step="1" min="1" value="0" data-harga="25000" id="jumlah-kamarmandi" name="quantity" class="form-control-plaintext border border-secondary text-center mx-1" readonly>
                                         <button type="button" class="button-plus btn btn-outline-secondary mx-1 fw-bolder" data-field="quantity">➕</button>
                                     </div>
                                     <div id="" class="form-text">Per-kamar mandi Rp 25.000</div>
@@ -131,7 +131,7 @@
                                 <div class="col-md-4">
                                     <div class="btn-group" role="group" aria-label="Basic outlined example">
                                         <button type="button" class="button-minus btn btn-outline-secondary mx-1 fw-bolder" data-field="quantity">➖</button>
-                                        <input type="number" step="1" min="1" value="0" id="jumlah-ruangtengah" name="quantity" class="form-control-plaintext border border-secondary text-center mx-1" readonly>
+                                        <input type="number" step="1" min="1" value="0" data-harga="15000" id="jumlah-ruangtengah" name="quantity" class="form-control-plaintext border border-secondary text-center mx-1" readonly>
                                         <button type="button" class="button-plus btn btn-outline-secondary mx-1 fw-bolder" data-field="quantity">➕</button>
                                     </div>
                                     <div id="" class="form-text">Per-ruang tengah Rp 15.000</div>
@@ -144,7 +144,7 @@
                                 <div class="col-md-4">
                                     <div class="btn-group" role="group" aria-label="Basic outlined example">
                                         <button type="button" class="button-minus btn btn-outline-secondary mx-1 fw-bolder" data-field="quantity">➖</button>
-                                        <input type="number" step="1" min="1" value="0" id="jumlah-dapur" name="quantity" class="form-control-plaintext border border-secondary text-center mx-1" readonly>
+                                        <input type="number" step="1" min="1" value="0" data-harga="15000" id="jumlah-dapur" name="quantity" class="form-control-plaintext border border-secondary text-center mx-1" readonly>
                                         <button type="button" class="button-plus btn btn-outline-secondary mx-1 fw-bolder" data-field="quantity">➕</button>
                                     </div>
                                     <div id="" class="form-text">Per-dapur Rp 15.000</div>
@@ -155,7 +155,7 @@
                                 <div class="col-md-4">
                                     <div class="btn-group" role="group" aria-label="Basic outlined example">
                                         <button type="button" class="button-minus btn btn-outline-secondary mx-1 fw-bolder" data-field="quantity">➖</button>
-                                        <input type="number" step="1" min="1" value="0" id="jumlah-kulkas" name="quantity" class="form-control-plaintext border border-secondary text-center mx-1" readonly>
+                                        <input type="number" step="1" min="1" value="0" data-harga="15000" id="jumlah-kulkas" name="quantity" class="form-control-plaintext border border-secondary text-center mx-1" readonly>
                                         <button type="button" class="button-plus btn btn-outline-secondary mx-1 fw-bolder" data-field="quantity">➕</button>
                                     </div>
                                     <div id="" class="form-text">Per-kulkas Rp 15.000</div>
@@ -166,7 +166,7 @@
                                 <div class="col-md-4">
                                     <div class="btn-group" role="group" aria-label="Basic outlined example">
                                         <button type="button" class="button-minus btn btn-outline-secondary mx-1 fw-bolder" data-field="quantity">➖</button>
-                                        <input type="number" step="1" min="1" value="0" id="jumlah-kamarkos" name="quantity" class="form-control-plaintext border border-secondary text-center mx-1" readonly>
+                                        <input type="number" step="1" min="1" value="0" data-harga="15000" id="jumlah-kamarkos" name="quantity" class="form-control-plaintext border border-secondary text-center mx-1" readonly>
                                         <button type="button" class="button-plus btn btn-outline-secondary mx-1 fw-bolder" data-field="quantity">➕</button>
                                     </div>
                                     <div id="" class="form-text">Per-kamar Rp 15.000</div>
@@ -177,7 +177,7 @@
                                 <div class="col-md-4">
                                     <div class="btn-group" role="group" aria-label="Basic outlined example">
                                         <button type="button" class="button-minus btn btn-outline-secondary mx-1 fw-bolder" data-field="quantity">➖</button>
-                                        <input type="number" step="1" min="1" value="0" id="jumlah-ecoenzyme" name="quantity" class="form-control-plaintext border border-secondary text-center mx-1" readonly>
+                                        <input type="number" step="1" min="1" value="0" data-harga="10000" id="jumlah-ecoenzyme" name="quantity" class="form-control-plaintext border border-secondary text-center mx-1" readonly>
                                         <button type="button" class="button-plus btn btn-outline-secondary mx-1 fw-bolder" data-field="quantity">➕</button>
                                     </div>
                                     <div id="" class="form-text">Per-botol Rp 10.000</div>
@@ -317,8 +317,8 @@
                                                     <th colspan="2" class="text-center table-active">Rincian Biaya Pesanan</th>
                                                 </tr>
                                                 <tr>
-                                                    <th>Layanan atau Paket <span class="badge bg-info"><small id="pilih-layanan"></small></span></th>
-                                                    <td style="text-align: right;" id="harga-layanan"></td>
+                                                    <th>Layanan atau Paket <span class="badge bg-info"><small id="pilih-paket"></small></span></th>
+                                                    <td style="text-align: right;" id="harga-paket"></td>
                                                 </tr>
                                                 <tr id="tipe-ruangan" class="d-none">
                                                     <th colspan="2" class="table-active">Tipe Ruangan</th>

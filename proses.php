@@ -392,7 +392,7 @@
                         <h5 class="card-header bg-white"></h5>
                         <div class="card-body">
                             <div class="row">
-                                <div class="col-sm-6">
+                                <div class="col-sm-7">
                                     <div class="alert alert-info" role="alert">
                                         Total yang harus dibayar nantinya (tagihan): <font class="fw-bold total-tagihan"></font>
                                     </div>
@@ -401,35 +401,40 @@
                             <h4>Pilih Metode Pembayaran</h4>
                             <small class="text-muted">Kamu dapat memilih payment gateway yang telah kami sediakan</small>
                             <div class="row mt-3">
-                                <div class="btn-group col-md-6" role="group" aria-label="Basic radio toggle button group">
-                                    <input type="radio" class="btn-check" name="metode-pembayaran" id="metode-banktrsnsfer" autocomplete="off" checked>
-                                    <label class="btn btn-outline-primary me-3" for="metode-banktrsnsfer">
+                                <div class="btn-group col-md-7" role="group" aria-label="Basic radio toggle button group">
+                                    <input type="radio" class="btn-check" name="metode-pembayaran" id="metode-bayarcleaner" autocomplete="off">
+                                    <label class="btn btn-outline-primary me-3" for="metode-bayarcleaner">
+                                        <img src="//icons.getbootstrap.com/assets/icons/cash-stack.svg" class="bg-white" height="25px" alt="" title="">
+                                        <h6 class="card-title d-none d-md-block d-lg-block">Bayar dengan Cleaner</h6>
+                                    </label>
+                                    <input type="radio" class="btn-check" name="metode-pembayaran" id="metode-banktransfer" autocomplete="off">
+                                    <label class="btn btn-outline-primary me-3" for="metode-banktransfer">
                                         <img src="./assets/images/pkwradlqdwtfv.png" class="bg-white" height="25px" alt="" title="">
-                                        <h6 class="card-title">Bank Transfer</h6>
+                                        <h6 class="card-title d-none d-md-block d-lg-block">Bank Transfer</h6>
                                     </label>
                                     <input type="radio" class="btn-check" name="metode-pembayaran" id="metode-debit" autocomplete="off">
                                     <label class="btn btn-outline-primary me-3" for="metode-debit">
                                         <img src="./assets/images/pkwradlqdwtfu.png" class="bg-white" height="25px" alt="" title="">
-                                        <h6 class="card-title">Kartu Kredit</h6>
+                                        <h6 class="card-title d-none d-md-block d-lg-block">Kartu Kredit</h6>
                                     </label>
                                 </div>
                             </div>
                             <div class="row mt-3 mb-2">
-                                <div class="btn-group col-md-6" role="group" aria-label="Basic radio toggle button group">
+                                <div class="btn-group col-md-7" role="group" aria-label="Basic radio toggle button group">
                                     <input type="radio" class="btn-check" name="metode-pembayaran" id="metode-gopay" autocomplete="off">
                                     <label class="btn btn-outline-primary me-3" for="metode-gopay">
                                         <img src="./assets/images/pkwradlqdwtfs.png" class="bg-white" height="18px" alt="" title="">
-                                        <h6 class="card-title">GoPay</h6>
+                                        <h6 class="card-title d-none d-md-block d-lg-block">GoPay</h6>
                                     </label>
                                     <input type="radio" class="btn-check" name="metode-pembayaran" id="metode-ovo" autocomplete="off">
                                     <label class="btn btn-outline-primary me-3" for="metode-ovo">
                                         <img src="./assets/images/pkwradlqdwtfr.png" class="bg-white" height="25px" alt="" title="">
-                                        <h6 class="card-title">OVO</h6>
+                                        <h6 class="card-title d-none d-md-block d-lg-block">OVO</h6>
                                     </label>
                                     <input type="radio" class="btn-check" name="metode-pembayaran" id="metode-dana" autocomplete="off">
                                     <label class="btn btn-outline-primary me-3" for="metode-dana">
                                         <img src="./assets/images/pkwradlqdwtft.png" class="bg-white" height="20px" alt="" title="">
-                                        <h6 class="card-title">Dana</h6>
+                                        <h6 class="card-title d-none d-md-block d-lg-block">Dana</h6>
                                     </label>
                                 </div>
                             </div>

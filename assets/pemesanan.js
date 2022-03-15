@@ -1,6 +1,6 @@
 $(document).ready(function(){
-    $('#tanggal').val('2022-01-03'); // Tahun-Tanggal-Bulan
-    $('#jam').val('08:00:00');
+    /*$('#tanggal').val('2022-01-03'); // Tahun-Tanggal-Bulan
+    $('#jam').val('08:00:00');*/
     const tarifEcoEnzyme = 10000;
     const tarifKamar = tarifRuangTengah = tarifDapur = tarifKulkas = tarifKamarKos = 15000;
     const tarifKamarMandi = 25000;
@@ -197,7 +197,31 @@ $(document).ready(function(){
         decrementValue(e);
     });
 
+    $('#nextJadwal').on('click', function() {
+        var tanggal = $('input[for="tanggal"]').val();
+        var jam = $('input[for="jam"]').val();
+        var jalan = $('input[for="jalan"]').val();
+        var rt = $('input[for="rt"]').val();
+        var rw = $('input[for="rw"]').val();
+        var kota = $('input[for="kota"]').val();
+        var provinsi = $('input[for="provinsi"]').val();
+        var kodepos = $('input[for="kodepos"]').val();
+        var nama = $('input[for="nama"]').val();
+        var surel = $('input[for="surel"]').val();
+        var gawai = $('input[for="gawai"]').val();
 
+        $('td[for="data-tanggal"]').text(tanggal);
+        $('td[for="data-jam"]').text(jam);
+        $('td[for="data-nama"]').text(nama);
+        $('font[for="data-jalan"]').text(jalan);
+        $('font[for="data-rt"]').text(rt);
+        $('font[for="data-rw"]').text(rw);
+        $('font[for="data-kota"]').text(kota);
+        $('font[for="data-provinsi"]').text(provinsi);
+        $('font[for="data-kodepos"]').text(kodepos);
+        $('td[for="data-surel"]').text(surel);
+        $('font[for="data-gawai"]').text(gawai);
+    });
 
     function scroll_to_class(element_class, removed_height) {
         var scroll_to = $(element_class).offset().top - removed_height;

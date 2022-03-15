@@ -202,20 +202,20 @@
                                 <label for="" class="col-sm-1 col-form-label">Waktu</label>
                                 <div class="col-sm-5" id="">
                                     <div class="input-group">
-                                        <input id="tanggal" type="date" class="form-control" name="" autocomplete="off" required>
-                                        <input id="jam" type="time" class="form-control" name="" autocomplete="off" required>
+                                        <input for="tanggal" type="date" class="form-control" name="" autocomplete="off" required>
+                                        <input for="jam" type="time" class="form-control" name="" autocomplete="off" required>
                                     </div>
                                 </div>
                             </div>
                             <div class="row mt-3">
                                 <label for="" class="col-sm-1 col-form-label">Alamat</label>
-                                <div class="col-sm-7" id="">
-                                    <input type="text" class="form-control" name="" autocomplete="off" placeholder="Jl. XYZ No. 123" value="Jl. XYZ No. 123" required>
+                                <div class="col-sm-7" id="jalan">
+                                    <input type="text" class="form-control" name="" autocomplete="off" placeholder="Jl. XYZ No. 123" value="" for="jalan" required>
                                 </div>
                                 <div class="col-sm-4" id="">
                                     <div class="input-group">
-                                        <input type="number" class="form-control" min="0" name="" autocomplete="off" placeholder="RT" value="001" required>
-                                        <input type="number" class="form-control" min="0" name="" autocomplete="off" placeholder="RW" value="002" required>
+                                        <input type="number" class="form-control" min="0" name="" autocomplete="off" placeholder="RT" value="" for="rt" required>
+                                        <input type="number" class="form-control" min="0" name="" autocomplete="off" placeholder="RW" value="" for="rw" required>
                                     </div>
                                 </div>
                             </div>
@@ -223,34 +223,34 @@
                                 <label for="" class="col-sm-1 col-form-label"></label>
                                 <div class="col-sm-5" id="">
                                     <div class="input-group">
-                                        <input type="text" class="form-control" name="" autocomplete="off" placeholder="Kota" value="ABC" required>
-                                        <input type="text" class="form-control" name="" autocomplete="off" placeholder="Provinsi" value="DEFG" required>
+                                        <input type="text" class="form-control" name="" autocomplete="off" placeholder="Kota" value="" for="kota" required>
+                                        <input type="text" class="form-control" name="" autocomplete="off" placeholder="Provinsi" value="" for="provinsi" required>
                                     </div>
                                 </div>
-                                <div class="col-sm-2" id="">
-                                    <input type="number" class="form-control" min="0" name="" autocomplete="off" placeholder="Kode Pos" value="12345" required>
+                                <div class="col-sm-2" id="kodepos">
+                                    <input type="number" class="form-control" min="0" name="" autocomplete="off" placeholder="Kode Pos" value="" for="kodepos" required>
                                 </div>
                             </div>
                             <h4>Biodata Pemesan</h4>
                             <small class="text-muted">Silakan isi datamu dengan benar untuk kami dihubungi guna keperluan pemesanan</small>
                             <div class="row mt-3">
                                 <label for="" class="col-sm-1 col-form-label">Nama</label>
-                                <div class="col-sm-7" id="">
-                                    <input type="text" class="form-control" name="" autocomplete="off" placeholder="John Doe" value="John Doe" required>
+                                <div class="col-sm-7" id="nama">
+                                    <input type="text" class="form-control" name="" autocomplete="off" placeholder="John Doe" value="" for="nama" required>
                                 </div>
                             </div>
                             <div class="row mt-3">
                                 <label for="" class="col-sm-1 col-form-label">Email</label>
-                                <div class="col-sm-5" id="">
-                                    <input type="email" class="form-control" name="" autocomplete="off" placeholder="johndoe@example.com" value="johndoe@example.com" required>
+                                <div class="col-sm-5" id="surel">
+                                    <input type="email" class="form-control" name="" autocomplete="off" placeholder="johndoe@example.com" value="" for="surel" required>
                                 </div>
                             </div>
                             <div class="row mt-3">
                                 <label for="" class="col-sm-1 col-form-label">No. HP</label>
                                 <div class="col-sm-5" id="">
                                     <div class="input-group mb-3">
-                                        <span class="input-group-text" id="">+62</span>
-                                        <input type="text" class="form-control" name="" autocomplete="off" placeholder="8123456789" value="8123456789" for="" required>
+                                        <span class="input-group-text" id="gawai">+62</span>
+                                        <input type="text" class="form-control" name="" autocomplete="off" placeholder="8123456789" value="" for="gawai" required>
                                     </div>
                                 </div>
                             </div>
@@ -262,7 +262,7 @@
                         <div class="card-footer bg-light">
                             <div class="d-flex justify-content-between">
                                 <button type="button" class="btn btn-outline-warning btn-md col-md-3 btn-previous"><i class="bi bi-arrow-left"></i> Sebelumnya</button>
-                                <button type="button" class="btn btn-outline-secondary btn-md col-md-3 btn-next">Selanjutnya <i class="bi bi-arrow-right"></i></button>
+                                <button type="button" class="btn btn-outline-secondary btn-md col-md-3 btn-next" id="nextJadwal">Selanjutnya <i class="bi bi-arrow-right"></i></button>
                             </div>
                         </div>
                     </div>
@@ -280,30 +280,41 @@
                                         <table class="table table-border table-hover" style="width: 100%;">
                                             <tbody>
                                                 <tr>
+                                                    <th colspan="2" class="text-center table-active">Waktu Pembersihan</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>Tanggal</th>
+                                                    <td for="data-tanggal"></td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Jam</th>
+                                                    <td for="data-jam"></td>
+                                                </tr>
+                                                <tr>
                                                     <th colspan="2" class="text-center table-active">Biodata Pemesan</th>
                                                 </tr>
                                                 <tr>
                                                     <th>Nama</th>
-                                                    <td>John Doe</td>
+                                                    <td for="data-nama"></td>
                                                 </tr>
                                                 <tr>
                                                     <th>Alamat</th>
-                                                    <td>Jl. XYZ No. 123 RT:001/RW:002</td>
+                                                    <td><font for="data-jalan"></font> RT:<font for="data-rt"></font>/RW:<font for="data-rw"></font></td>
                                                 </tr>
                                                 <tr>
                                                     <th></th>
-                                                    <td>Kota ABC, Provinsi DEFG, 12345</td>
+                                                    <td>Kota <font for="data-kota"></font>, Provinsi <font for="data-provinsi"></font>, <font for="data-kodepos"></font></td>
                                                 </tr>
                                                 <tr>
                                                     <th colspan="2" class="text-center table-active">Kontak</th>
                                                 </tr>
                                                 <tr>
                                                     <th>Email</th>
-                                                    <td>johndoe@example.com</td>
+                                                    <td for="data-surel"></td>
                                                 </tr>
                                                 <tr>
                                                     <th>No. HP</th>
-                                                    <td>+628123456789</td>
+                                                    <td>+62 <font for="data-gawai"></font></td>
                                                 </tr>
                                             </tbody>
                                         </table>
